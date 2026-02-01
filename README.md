@@ -82,5 +82,3 @@ python main.py
 * **Zebra Detection:** If the crossing is not being detected, lower the threshold value in `detect_zebra_zone` from `150` to `120`.
 
 ---
-
-**Would you like me to add a "License" or "Future Roadmap" section to this README?**
