@@ -54,8 +54,8 @@ To prevent "fake tickets," the system follows this sequence:
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/yourusername/smart-chowk.git
-cd smart-chowk
+git clone https://github.com/yourusername/Vahtuk-Policia.git
+cd Vahtuk-Policia
 
 ```
 
