@@ -1,6 +1,4 @@
-This README is designed to give your project a professional look while clearly explaining the logic you've built—from the HSV signal filtering to the "Entry-Trigger" violation system.
-
----
+# WORK IN PROGRESS
 
 # 🚦 Vāhatūk Polīsia: AI Traffic Violation Detection System
 
