@@ -3,7 +3,7 @@ import numpy as np
 from ultralytics import YOLO
 
 model = YOLO('yolov8n.pt') 
-cap = cv2.VideoCapture('traffic_video.mp4')
+cap = cv2.VideoCapture('Red_Light_Violation.mp4')
 
 violated_ids = set()
 current_signal = "GREEN"
