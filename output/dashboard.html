@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Traffic Violation Report</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #0d1117;
+    --surface: #161b22;
+    --border: #30363d;
+    --accent: #f85149;
+    --accent2: #58a6ff;
+    --accent3: #3fb950;
+    --text: #e6edf3;
+    --muted: #8b949e;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    padding: 2rem;
+  }
+  header {
+    display: flex; align-items: center; gap: 1rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1.5rem; margin-bottom: 2rem;
+  }
+  header h1 { font-size: 1.6rem; font-weight: 700; }
+  header p  { color: var(--muted); font-size: 0.9rem; margin-top: 0.25rem; }
+  .badge {
+    background: var(--accent); color: #fff;
+    padding: 0.25rem 0.75rem; border-radius: 99px;
+    font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem; margin-bottom: 2rem;
+  }
+  .card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; padding: 1.25rem;
+  }
+  .card .num {
+    font-size: 2.2rem; font-weight: 800; line-height: 1;
+  }
+  .card .label {
+    color: var(--muted); font-size: 0.75rem;
+    text-transform: uppercase; letter-spacing: 0.08em; margin-top: 0.4rem;
+  }
+  .red   { color: var(--accent); }
+  .blue  { color: var(--accent2); }
+  .green { color: var(--accent3); }
+
+  .charts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem; margin-bottom: 2rem;
+  }
+  .chart-box {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; padding: 1.25rem;
+  }
+  .chart-box h3 {
+    font-size: 0.85rem; font-weight: 600; color: var(--muted);
+    text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 1rem;
+  }
+
+  table {
+    width: 100%; border-collapse: collapse;
+    background: var(--surface); border-radius: 10px; overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  th {
+    background: #1c2128; padding: 0.75rem 1rem;
+    text-align: left; font-size: 0.8rem;
+    color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em;
+  }
+  td { padding: 0.65rem 1rem; font-size: 0.9rem; border-top: 1px solid var(--border); }
+  tr:hover td { background: #1c2128; }
+  .sev-HIGH   { color: var(--accent);  font-weight: 700; }
+  .sev-MEDIUM { color: #d29922; font-weight: 600; }
+  .sev-LOW    { color: var(--accent3); }
+  .section-title {
+    font-size: 1rem; font-weight: 700; margin-bottom: 0.75rem;
+    display: flex; align-items: center; gap: 0.5rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>🚦 Traffic Violation Detection Report</h1>
+    <p>Powered by YOLOv8n + ByteTrack</p>
+  </div>
+  <span class="badge">LIVE ANALYSIS</span>
+</header>
+
+<div class="cards">
+  <div class="card">
+    <div class="num red">287</div>
+    <div class="label">Total Violations</div>
+  </div>
+  <div class="card"><div class="num blue">4</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">5</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num red">19</div><div class="label">↩️ Wrong-Way Driving</div></div>
+<div class="card"><div class="num blue">3</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">5</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">6</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">7</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">9</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">6</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">2</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">12</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">6</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">2</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">4</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">5</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">4</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">5</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">11</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">5</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">7</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">5</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">5</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">2</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">3</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">7</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">5</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">5</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">10</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">6</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">6</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">6</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">5</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">4</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">3</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">3</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">6</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">3</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">5</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">3</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">4</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">3</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">3</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">2</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">2</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">2</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">2</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">2</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">2</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">2</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">2</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">2</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num red">2</div><div class="label">🔴 Red Light Running</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">1</div><div class="label">⚠️ Speeding</div></div>
+<div class="card"><div class="num blue">3</div><div class="label">⚠️ Speeding</div></div>
+</div>
+
+<div class="charts">
+  <div class="chart-box">
+    <h3>Violations by Type</h3>
+    <canvas id="typeChart"></canvas>
+  </div>
+  <div class="chart-box">
+    <h3>Violations by Vehicle Class</h3>
+    <canvas id="vehicleChart"></canvas>
+  </div>
+</div>
+
+<div class="section-title">📋 Violation Log</div>
+<table>
+  <thead>
+    <tr>
+      <th>#</th><th>Frame</th><th>Track ID</th>
+      <th>Vehicle</th><th>Violation</th><th>Severity</th><th>Confidence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>3</td><td>#2</td><td>car</td><td>Speeding (72 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.80</td></tr>
+<tr><td>2</td><td>4</td><td>#2</td><td>car</td><td>Speeding (84 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.80</td></tr>
+<tr><td>3</td><td>4</td><td>#4</td><td>car</td><td>Wrong-Way Driving</td><td class='sev-HIGH'>HIGH</td><td>0.76</td></tr>
+<tr><td>4</td><td>5</td><td>#2</td><td>car</td><td>Speeding (97 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.82</td></tr>
+<tr><td>5</td><td>5</td><td>#9</td><td>car</td><td>Speeding (69 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.56</td></tr>
+<tr><td>6</td><td>6</td><td>#2</td><td>car</td><td>Speeding (62 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.81</td></tr>
+<tr><td>7</td><td>7</td><td>#2</td><td>car</td><td>Speeding (66 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.82</td></tr>
+<tr><td>8</td><td>8</td><td>#2</td><td>car</td><td>Speeding (55 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.79</td></tr>
+<tr><td>9</td><td>9</td><td>#4</td><td>car</td><td>Speeding (147 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.46</td></tr>
+<tr><td>10</td><td>9</td><td>#5</td><td>truck</td><td>Speeding (56 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.66</td></tr>
+<tr><td>11</td><td>9</td><td>#9</td><td>car</td><td>Speeding (141 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.56</td></tr>
+<tr><td>12</td><td>10</td><td>#2</td><td>car</td><td>Speeding (52 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.85</td></tr>
+<tr><td>13</td><td>10</td><td>#9</td><td>car</td><td>Speeding (66 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.48</td></tr>
+<tr><td>14</td><td>11</td><td>#2</td><td>car</td><td>Speeding (64 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.82</td></tr>
+<tr><td>15</td><td>11</td><td>#9</td><td>car</td><td>Speeding (74 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.50</td></tr>
+<tr><td>16</td><td>16</td><td>#2</td><td>car</td><td>Speeding (73 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.64</td></tr>
+<tr><td>17</td><td>16</td><td>#7</td><td>car</td><td>Speeding (81 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.64</td></tr>
+<tr><td>18</td><td>19</td><td>#15</td><td>car</td><td>Speeding (50 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.63</td></tr>
+<tr><td>19</td><td>20</td><td>#15</td><td>car</td><td>Wrong-Way Driving</td><td class='sev-HIGH'>HIGH</td><td>0.74</td></tr>
+<tr><td>20</td><td>20</td><td>#9</td><td>car</td><td>Speeding (85 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.59</td></tr>
+<tr><td>21</td><td>22</td><td>#14</td><td>car</td><td>Speeding (51 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.49</td></tr>
+<tr><td>22</td><td>22</td><td>#14</td><td>car</td><td>Wrong-Way Driving</td><td class='sev-HIGH'>HIGH</td><td>0.49</td></tr>
+<tr><td>23</td><td>26</td><td>#9</td><td>car</td><td>Speeding (93 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.50</td></tr>
+<tr><td>24</td><td>30</td><td>#2</td><td>car</td><td>Speeding (62 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.67</td></tr>
+<tr><td>25</td><td>30</td><td>#15</td><td>car</td><td>Wrong-Way Driving</td><td class='sev-HIGH'>HIGH</td><td>0.88</td></tr>
+<tr><td>26</td><td>31</td><td>#2</td><td>car</td><td>Speeding (57 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.63</td></tr>
+<tr><td>27</td><td>33</td><td>#5</td><td>truck</td><td>Speeding (63 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.70</td></tr>
+<tr><td>28</td><td>34</td><td>#2</td><td>car</td><td>Speeding (52 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.81</td></tr>
+<tr><td>29</td><td>35</td><td>#2</td><td>car</td><td>Speeding (71 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.70</td></tr>
+<tr><td>30</td><td>35</td><td>#9</td><td>car</td><td>Speeding (123 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.54</td></tr>
+<tr><td>31</td><td>36</td><td>#2</td><td>car</td><td>Speeding (86 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.79</td></tr>
+<tr><td>32</td><td>37</td><td>#2</td><td>car</td><td>Speeding (51 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.79</td></tr>
+<tr><td>33</td><td>37</td><td>#5</td><td>truck</td><td>Speeding (61 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.61</td></tr>
+<tr><td>34</td><td>37</td><td>#14</td><td>car</td><td>Wrong-Way Driving</td><td class='sev-HIGH'>HIGH</td><td>0.53</td></tr>
+<tr><td>35</td><td>38</td><td>#5</td><td>truck</td><td>Speeding (65 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.62</td></tr>
+<tr><td>36</td><td>40</td><td>#2</td><td>car</td><td>Speeding (67 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.79</td></tr>
+<tr><td>37</td><td>41</td><td>#15</td><td>car</td><td>Speeding (53 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.94</td></tr>
+<tr><td>38</td><td>42</td><td>#21</td><td>car</td><td>Speeding (93 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.49</td></tr>
+<tr><td>39</td><td>44</td><td>#15</td><td>car</td><td>Speeding (52 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.93</td></tr>
+<tr><td>40</td><td>45</td><td>#15</td><td>car</td><td>Speeding (58 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.90</td></tr>
+<tr><td>41</td><td>46</td><td>#2</td><td>car</td><td>Speeding (60 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.69</td></tr>
+<tr><td>42</td><td>47</td><td>#15</td><td>car</td><td>Speeding (50 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.93</td></tr>
+<tr><td>43</td><td>48</td><td>#3</td><td>car</td><td>Speeding (50 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.77</td></tr>
+<tr><td>44</td><td>48</td><td>#15</td><td>car</td><td>Speeding (51 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.85</td></tr>
+<tr><td>45</td><td>49</td><td>#2</td><td>car</td><td>Speeding (53 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.74</td></tr>
+<tr><td>46</td><td>50</td><td>#15</td><td>car</td><td>Speeding (54 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.88</td></tr>
+<tr><td>47</td><td>50</td><td>#21</td><td>car</td><td>Speeding (143 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.48</td></tr>
+<tr><td>48</td><td>51</td><td>#3</td><td>car</td><td>Speeding (51 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.85</td></tr>
+<tr><td>49</td><td>54</td><td>#15</td><td>car</td><td>Speeding (55 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.90</td></tr>
+<tr><td>50</td><td>55</td><td>#3</td><td>car</td><td>Speeding (63 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.87</td></tr>
+<tr><td>51</td><td>55</td><td>#15</td><td>car</td><td>Speeding (57 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.88</td></tr>
+<tr><td>52</td><td>56</td><td>#21</td><td>car</td><td>Speeding (80 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.59</td></tr>
+<tr><td>53</td><td>57</td><td>#3</td><td>car</td><td>Speeding (58 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.83</td></tr>
+<tr><td>54</td><td>57</td><td>#15</td><td>car</td><td>Speeding (64 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.87</td></tr>
+<tr><td>55</td><td>58</td><td>#3</td><td>car</td><td>Speeding (55 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.91</td></tr>
+<tr><td>56</td><td>59</td><td>#15</td><td>car</td><td>Speeding (62 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.88</td></tr>
+<tr><td>57</td><td>59</td><td>#21</td><td>car</td><td>Speeding (61 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.50</td></tr>
+<tr><td>58</td><td>60</td><td>#3</td><td>car</td><td>Speeding (54 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.89</td></tr>
+<tr><td>59</td><td>60</td><td>#15</td><td>car</td><td>Speeding (53 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.85</td></tr>
+<tr><td>60</td><td>61</td><td>#15</td><td>car</td><td>Speeding (51 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.83</td></tr>
+<tr><td>61</td><td>62</td><td>#3</td><td>car</td><td>Speeding (52 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.90</td></tr>
+<tr><td>62</td><td>62</td><td>#15</td><td>car</td><td>Speeding (66 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.79</td></tr>
+<tr><td>63</td><td>63</td><td>#3</td><td>car</td><td>Speeding (51 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.91</td></tr>
+<tr><td>64</td><td>63</td><td>#15</td><td>car</td><td>Speeding (65 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.83</td></tr>
+<tr><td>65</td><td>64</td><td>#3</td><td>car</td><td>Speeding (57 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.92</td></tr>
+<tr><td>66</td><td>64</td><td>#15</td><td>car</td><td>Speeding (61 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.79</td></tr>
+<tr><td>67</td><td>65</td><td>#1</td><td>car</td><td>Wrong-Way Driving</td><td class='sev-HIGH'>HIGH</td><td>0.95</td></tr>
+<tr><td>68</td><td>65</td><td>#3</td><td>car</td><td>Speeding (66 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.91</td></tr>
+<tr><td>69</td><td>67</td><td>#3</td><td>car</td><td>Speeding (62 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.90</td></tr>
+<tr><td>70</td><td>67</td><td>#15</td><td>car</td><td>Speeding (60 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.86</td></tr>
+<tr><td>71</td><td>68</td><td>#3</td><td>car</td><td>Speeding (61 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.91</td></tr>
+<tr><td>72</td><td>69</td><td>#3</td><td>car</td><td>Speeding (69 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.90</td></tr>
+<tr><td>73</td><td>69</td><td>#15</td><td>car</td><td>Speeding (72 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.87</td></tr>
+<tr><td>74</td><td>70</td><td>#15</td><td>car</td><td>Speeding (58 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.87</td></tr>
+<tr><td>75</td><td>71</td><td>#3</td><td>car</td><td>Speeding (59 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.90</td></tr>
+<tr><td>76</td><td>71</td><td>#15</td><td>car</td><td>Speeding (69 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.89</td></tr>
+<tr><td>77</td><td>71</td><td>#5</td><td>truck</td><td>Speeding (328 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.55</td></tr>
+<tr><td>78</td><td>72</td><td>#3</td><td>car</td><td>Speeding (68 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.91</td></tr>
+<tr><td>79</td><td>72</td><td>#15</td><td>car</td><td>Speeding (70 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.89</td></tr>
+<tr><td>80</td><td>72</td><td>#24</td><td>car</td><td>Wrong-Way Driving</td><td class='sev-HIGH'>HIGH</td><td>0.57</td></tr>
+<tr><td>81</td><td>73</td><td>#3</td><td>car</td><td>Speeding (78 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.92</td></tr>
+<tr><td>82</td><td>73</td><td>#17</td><td>car</td><td>Speeding (54 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.50</td></tr>
+<tr><td>83</td><td>74</td><td>#15</td><td>car</td><td>Speeding (63 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.90</td></tr>
+<tr><td>84</td><td>75</td><td>#3</td><td>car</td><td>Speeding (71 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.85</td></tr>
+<tr><td>85</td><td>75</td><td>#24</td><td>car</td><td>Speeding (66 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.56</td></tr>
+<tr><td>86</td><td>76</td><td>#3</td><td>car</td><td>Speeding (87 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.85</td></tr>
+<tr><td>87</td><td>76</td><td>#24</td><td>car</td><td>Speeding (61 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.62</td></tr>
+<tr><td>88</td><td>77</td><td>#3</td><td>car</td><td>Speeding (53 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.87</td></tr>
+<tr><td>89</td><td>77</td><td>#15</td><td>car</td><td>Speeding (64 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.84</td></tr>
+<tr><td>90</td><td>77</td><td>#5</td><td>truck</td><td>Speeding (96 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.71</td></tr>
+<tr><td>91</td><td>78</td><td>#15</td><td>car</td><td>Speeding (83 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.90</td></tr>
+<tr><td>92</td><td>80</td><td>#15</td><td>car</td><td>Speeding (71 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.89</td></tr>
+<tr><td>93</td><td>81</td><td>#15</td><td>car</td><td>Speeding (82 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.90</td></tr>
+<tr><td>94</td><td>84</td><td>#24</td><td>car</td><td>Speeding (52 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.75</td></tr>
+<tr><td>95</td><td>85</td><td>#2</td><td>car</td><td>Speeding (56 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.51</td></tr>
+<tr><td>96</td><td>85</td><td>#15</td><td>car</td><td>Speeding (84 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.85</td></tr>
+<tr><td>97</td><td>86</td><td>#15</td><td>car</td><td>Speeding (81 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.79</td></tr>
+<tr><td>98</td><td>87</td><td>#15</td><td>car</td><td>Speeding (67 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.88</td></tr>
+<tr><td>99</td><td>88</td><td>#15</td><td>car</td><td>Speeding (85 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.86</td></tr>
+<tr><td>100</td><td>89</td><td>#15</td><td>car</td><td>Speeding (88 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.84</td></tr>
+<tr><td>101</td><td>90</td><td>#15</td><td>car</td><td>Speeding (83 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.83</td></tr>
+<tr><td>102</td><td>90</td><td>#24</td><td>car</td><td>Wrong-Way Driving</td><td class='sev-HIGH'>HIGH</td><td>0.89</td></tr>
+<tr><td>103</td><td>91</td><td>#15</td><td>car</td><td>Speeding (78 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.84</td></tr>
+<tr><td>104</td><td>92</td><td>#15</td><td>car</td><td>Speeding (79 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.87</td></tr>
+<tr><td>105</td><td>93</td><td>#3</td><td>car</td><td>Speeding (51 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.55</td></tr>
+<tr><td>106</td><td>93</td><td>#15</td><td>car</td><td>Speeding (82 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.83</td></tr>
+<tr><td>107</td><td>94</td><td>#15</td><td>car</td><td>Speeding (91 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.85</td></tr>
+<tr><td>108</td><td>95</td><td>#15</td><td>car</td><td>Speeding (87 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.87</td></tr>
+<tr><td>109</td><td>96</td><td>#15</td><td>car</td><td>Speeding (81 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.88</td></tr>
+<tr><td>110</td><td>97</td><td>#15</td><td>car</td><td>Speeding (86 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.88</td></tr>
+<tr><td>111</td><td>98</td><td>#15</td><td>car</td><td>Speeding (98 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.88</td></tr>
+<tr><td>112</td><td>100</td><td>#15</td><td>car</td><td>Speeding (88 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.87</td></tr>
+<tr><td>113</td><td>101</td><td>#15</td><td>car</td><td>Speeding (93 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.87</td></tr>
+<tr><td>114</td><td>102</td><td>#15</td><td>car</td><td>Speeding (92 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.88</td></tr>
+<tr><td>115</td><td>103</td><td>#27</td><td>car</td><td>Speeding (97 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.76</td></tr>
+<tr><td>116</td><td>104</td><td>#15</td><td>car</td><td>Speeding (102 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.86</td></tr>
+<tr><td>117</td><td>106</td><td>#15</td><td>car</td><td>Speeding (103 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.84</td></tr>
+<tr><td>118</td><td>106</td><td>#27</td><td>car</td><td>Speeding (129 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.61</td></tr>
+<tr><td>119</td><td>107</td><td>#15</td><td>car</td><td>Speeding (96 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.85</td></tr>
+<tr><td>120</td><td>107</td><td>#22</td><td>car</td><td>Speeding (57 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.46</td></tr>
+<tr><td>121</td><td>108</td><td>#15</td><td>car</td><td>Speeding (110 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.89</td></tr>
+<tr><td>122</td><td>110</td><td>#15</td><td>car</td><td>Speeding (85 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.89</td></tr>
+<tr><td>123</td><td>110</td><td>#27</td><td>car</td><td>Speeding (168 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.49</td></tr>
+<tr><td>124</td><td>111</td><td>#15</td><td>car</td><td>Speeding (105 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.85</td></tr>
+<tr><td>125</td><td>112</td><td>#15</td><td>car</td><td>Speeding (111 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.88</td></tr>
+<tr><td>126</td><td>114</td><td>#15</td><td>car</td><td>Speeding (59 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.88</td></tr>
+<tr><td>127</td><td>115</td><td>#15</td><td>car</td><td>Speeding (52 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.88</td></tr>
+<tr><td>128</td><td>116</td><td>#15</td><td>car</td><td>Speeding (55 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.89</td></tr>
+<tr><td>129</td><td>117</td><td>#15</td><td>car</td><td>Speeding (51 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.88</td></tr>
+<tr><td>130</td><td>117</td><td>#27</td><td>car</td><td>Speeding (152 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.50</td></tr>
+<tr><td>131</td><td>120</td><td>#15</td><td>car</td><td>Speeding (59 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.85</td></tr>
+<tr><td>132</td><td>120</td><td>#24</td><td>car</td><td>Wrong-Way Driving</td><td class='sev-HIGH'>HIGH</td><td>0.92</td></tr>
+<tr><td>133</td><td>122</td><td>#15</td><td>car</td><td>Speeding (52 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.76</td></tr>
+<tr><td>134</td><td>122</td><td>#34</td><td>car</td><td>Speeding (124 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.82</td></tr>
+<tr><td>135</td><td>122</td><td>#34</td><td>car</td><td>Wrong-Way Driving</td><td class='sev-HIGH'>HIGH</td><td>0.82</td></tr>
+<tr><td>136</td><td>123</td><td>#15</td><td>car</td><td>Speeding (64 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.70</td></tr>
+<tr><td>137</td><td>123</td><td>#34</td><td>car</td><td>Speeding (139 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.84</td></tr>
+<tr><td>138</td><td>124</td><td>#15</td><td>car</td><td>Speeding (55 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.76</td></tr>
+<tr><td>139</td><td>124</td><td>#34</td><td>car</td><td>Speeding (110 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.81</td></tr>
+<tr><td>140</td><td>125</td><td>#15</td><td>car</td><td>Speeding (56 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.81</td></tr>
+<tr><td>141</td><td>125</td><td>#34</td><td>car</td><td>Speeding (129 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.83</td></tr>
+<tr><td>142</td><td>126</td><td>#34</td><td>car</td><td>Speeding (108 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.90</td></tr>
+<tr><td>143</td><td>127</td><td>#34</td><td>car</td><td>Speeding (107 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.92</td></tr>
+<tr><td>144</td><td>128</td><td>#34</td><td>car</td><td>Speeding (98 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.94</td></tr>
+<tr><td>145</td><td>129</td><td>#24</td><td>car</td><td>Speeding (53 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.90</td></tr>
+<tr><td>146</td><td>129</td><td>#34</td><td>car</td><td>Speeding (91 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.94</td></tr>
+<tr><td>147</td><td>130</td><td>#34</td><td>car</td><td>Speeding (145 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.94</td></tr>
+<tr><td>148</td><td>131</td><td>#34</td><td>car</td><td>Speeding (185 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.95</td></tr>
+<tr><td>149</td><td>132</td><td>#34</td><td>car</td><td>Speeding (193 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.93</td></tr>
+<tr><td>150</td><td>133</td><td>#24</td><td>car</td><td>Speeding (57 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.93</td></tr>
+<tr><td>151</td><td>133</td><td>#34</td><td>car</td><td>Speeding (199 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.93</td></tr>
+<tr><td>152</td><td>134</td><td>#34</td><td>car</td><td>Speeding (195 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.92</td></tr>
+<tr><td>153</td><td>135</td><td>#34</td><td>car</td><td>Speeding (197 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.90</td></tr>
+<tr><td>154</td><td>136</td><td>#24</td><td>car</td><td>Speeding (52 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.92</td></tr>
+<tr><td>155</td><td>137</td><td>#34</td><td>car</td><td>Speeding (180 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.90</td></tr>
+<tr><td>156</td><td>138</td><td>#34</td><td>car</td><td>Speeding (169 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.93</td></tr>
+<tr><td>157</td><td>139</td><td>#24</td><td>car</td><td>Speeding (54 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.91</td></tr>
+<tr><td>158</td><td>139</td><td>#34</td><td>car</td><td>Speeding (161 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.91</td></tr>
+<tr><td>159</td><td>140</td><td>#34</td><td>car</td><td>Speeding (160 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.93</td></tr>
+<tr><td>160</td><td>141</td><td>#34</td><td>car</td><td>Speeding (159 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.92</td></tr>
+<tr><td>161</td><td>141</td><td>#38</td><td>car</td><td>Wrong-Way Driving</td><td class='sev-HIGH'>HIGH</td><td>0.60</td></tr>
+<tr><td>162</td><td>141</td><td>#5</td><td>truck</td><td>Speeding (597 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.54</td></tr>
+<tr><td>163</td><td>142</td><td>#30</td><td>car</td><td>Speeding (94 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.66</td></tr>
+<tr><td>164</td><td>142</td><td>#34</td><td>car</td><td>Speeding (142 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.93</td></tr>
+<tr><td>165</td><td>143</td><td>#34</td><td>car</td><td>Speeding (140 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.91</td></tr>
+<tr><td>166</td><td>144</td><td>#34</td><td>car</td><td>Speeding (141 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.92</td></tr>
+<tr><td>167</td><td>144</td><td>#38</td><td>car</td><td>Speeding (126 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.49</td></tr>
+<tr><td>168</td><td>145</td><td>#34</td><td>car</td><td>Speeding (136 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.90</td></tr>
+<tr><td>169</td><td>145</td><td>#38</td><td>car</td><td>Speeding (52 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.57</td></tr>
+<tr><td>170</td><td>145</td><td>#5</td><td>truck</td><td>Speeding (63 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.56</td></tr>
+<tr><td>171</td><td>146</td><td>#24</td><td>car</td><td>Speeding (58 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.84</td></tr>
+<tr><td>172</td><td>147</td><td>#34</td><td>car</td><td>Speeding (117 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.91</td></tr>
+<tr><td>173</td><td>148</td><td>#34</td><td>car</td><td>Speeding (112 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.91</td></tr>
+<tr><td>174</td><td>149</td><td>#34</td><td>car</td><td>Speeding (115 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.92</td></tr>
+<tr><td>175</td><td>150</td><td>#34</td><td>car</td><td>Speeding (115 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.93</td></tr>
+<tr><td>176</td><td>150</td><td>#38</td><td>car</td><td>Wrong-Way Driving</td><td class='sev-HIGH'>HIGH</td><td>0.67</td></tr>
+<tr><td>177</td><td>150</td><td>#5</td><td>truck</td><td>Speeding (69 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.48</td></tr>
+<tr><td>178</td><td>151</td><td>#34</td><td>car</td><td>Speeding (104 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.91</td></tr>
+<tr><td>179</td><td>152</td><td>#24</td><td>car</td><td>Speeding (60 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.83</td></tr>
+<tr><td>180</td><td>152</td><td>#34</td><td>car</td><td>Speeding (100 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.89</td></tr>
+<tr><td>181</td><td>153</td><td>#34</td><td>car</td><td>Speeding (91 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.89</td></tr>
+<tr><td>182</td><td>154</td><td>#24</td><td>car</td><td>Speeding (51 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.80</td></tr>
+<tr><td>183</td><td>154</td><td>#34</td><td>car</td><td>Speeding (94 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.89</td></tr>
+<tr><td>184</td><td>155</td><td>#34</td><td>car</td><td>Speeding (95 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.90</td></tr>
+<tr><td>185</td><td>156</td><td>#24</td><td>car</td><td>Speeding (53 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.82</td></tr>
+<tr><td>186</td><td>156</td><td>#34</td><td>car</td><td>Speeding (96 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.89</td></tr>
+<tr><td>187</td><td>157</td><td>#24</td><td>car</td><td>Speeding (55 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.82</td></tr>
+<tr><td>188</td><td>157</td><td>#34</td><td>car</td><td>Speeding (83 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.92</td></tr>
+<tr><td>189</td><td>158</td><td>#34</td><td>car</td><td>Speeding (79 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.90</td></tr>
+<tr><td>190</td><td>159</td><td>#34</td><td>car</td><td>Speeding (84 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.89</td></tr>
+<tr><td>191</td><td>160</td><td>#24</td><td>car</td><td>Speeding (74 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.83</td></tr>
+<tr><td>192</td><td>160</td><td>#34</td><td>car</td><td>Speeding (73 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.90</td></tr>
+<tr><td>193</td><td>160</td><td>#38</td><td>car</td><td>Speeding (67 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.69</td></tr>
+<tr><td>194</td><td>161</td><td>#24</td><td>car</td><td>Speeding (68 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.83</td></tr>
+<tr><td>195</td><td>161</td><td>#34</td><td>car</td><td>Speeding (72 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.88</td></tr>
+<tr><td>196</td><td>161</td><td>#30</td><td>car</td><td>Speeding (428 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.67</td></tr>
+<tr><td>197</td><td>162</td><td>#5</td><td>truck</td><td>Speeding (93 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.53</td></tr>
+<tr><td>198</td><td>163</td><td>#24</td><td>car</td><td>Speeding (64 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.82</td></tr>
+<tr><td>199</td><td>163</td><td>#34</td><td>car</td><td>Speeding (67 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.87</td></tr>
+<tr><td>200</td><td>164</td><td>#34</td><td>car</td><td>Speeding (62 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.87</td></tr>
+<tr><td>201</td><td>164</td><td>#30</td><td>car</td><td>Speeding (56 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.76</td></tr>
+<tr><td>202</td><td>165</td><td>#34</td><td>car</td><td>Speeding (59 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.84</td></tr>
+<tr><td>203</td><td>166</td><td>#24</td><td>car</td><td>Speeding (65 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.81</td></tr>
+<tr><td>204</td><td>166</td><td>#34</td><td>car</td><td>Speeding (61 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.86</td></tr>
+<tr><td>205</td><td>166</td><td>#42</td><td>car</td><td>Wrong-Way Driving</td><td class='sev-HIGH'>HIGH</td><td>0.47</td></tr>
+<tr><td>206</td><td>167</td><td>#34</td><td>car</td><td>Speeding (53 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.86</td></tr>
+<tr><td>207</td><td>168</td><td>#34</td><td>car</td><td>Speeding (58 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.88</td></tr>
+<tr><td>208</td><td>169</td><td>#24</td><td>car</td><td>Speeding (63 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.87</td></tr>
+<tr><td>209</td><td>169</td><td>#34</td><td>car</td><td>Speeding (56 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.85</td></tr>
+<tr><td>210</td><td>170</td><td>#34</td><td>car</td><td>Speeding (52 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.84</td></tr>
+<tr><td>211</td><td>171</td><td>#34</td><td>car</td><td>Speeding (51 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.87</td></tr>
+<tr><td>212</td><td>172</td><td>#24</td><td>car</td><td>Speeding (54 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.85</td></tr>
+<tr><td>213</td><td>172</td><td>#42</td><td>car</td><td>Speeding (87 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.55</td></tr>
+<tr><td>214</td><td>176</td><td>#24</td><td>car</td><td>Speeding (70 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.84</td></tr>
+<tr><td>215</td><td>178</td><td>#24</td><td>car</td><td>Speeding (66 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.80</td></tr>
+<tr><td>216</td><td>179</td><td>#24</td><td>car</td><td>Speeding (67 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.79</td></tr>
+<tr><td>217</td><td>179</td><td>#34</td><td>car</td><td>Red Light Running</td><td class='sev-HIGH'>HIGH</td><td>0.85</td></tr>
+<tr><td>218</td><td>180</td><td>#24</td><td>car</td><td>Speeding (57 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.82</td></tr>
+<tr><td>219</td><td>180</td><td>#34</td><td>car</td><td>Red Light Running</td><td class='sev-HIGH'>HIGH</td><td>0.84</td></tr>
+<tr><td>220</td><td>180</td><td>#38</td><td>car</td><td>Wrong-Way Driving</td><td class='sev-HIGH'>HIGH</td><td>0.85</td></tr>
+<tr><td>221</td><td>181</td><td>#24</td><td>car</td><td>Speeding (69 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.85</td></tr>
+<tr><td>222</td><td>182</td><td>#24</td><td>car</td><td>Speeding (78 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.80</td></tr>
+<tr><td>223</td><td>183</td><td>#24</td><td>car</td><td>Speeding (62 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.82</td></tr>
+<tr><td>224</td><td>184</td><td>#24</td><td>car</td><td>Speeding (64 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.82</td></tr>
+<tr><td>225</td><td>184</td><td>#5</td><td>truck</td><td>Speeding (482 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.58</td></tr>
+<tr><td>226</td><td>185</td><td>#24</td><td>car</td><td>Speeding (65 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.81</td></tr>
+<tr><td>227</td><td>186</td><td>#24</td><td>car</td><td>Speeding (66 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.79</td></tr>
+<tr><td>228</td><td>187</td><td>#24</td><td>car</td><td>Speeding (68 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.80</td></tr>
+<tr><td>229</td><td>187</td><td>#40</td><td>car</td><td>Speeding (61 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.49</td></tr>
+<tr><td>230</td><td>188</td><td>#38</td><td>car</td><td>Speeding (53 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.80</td></tr>
+<tr><td>231</td><td>188</td><td>#40</td><td>car</td><td>Speeding (93 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.54</td></tr>
+<tr><td>232</td><td>189</td><td>#40</td><td>car</td><td>Speeding (85 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.60</td></tr>
+<tr><td>233</td><td>190</td><td>#5</td><td>truck</td><td>Speeding (60 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.50</td></tr>
+<tr><td>234</td><td>191</td><td>#24</td><td>car</td><td>Speeding (70 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.85</td></tr>
+<tr><td>235</td><td>194</td><td>#24</td><td>car</td><td>Speeding (75 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.84</td></tr>
+<tr><td>236</td><td>196</td><td>#24</td><td>car</td><td>Speeding (71 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.87</td></tr>
+<tr><td>237</td><td>197</td><td>#24</td><td>car</td><td>Speeding (73 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.85</td></tr>
+<tr><td>238</td><td>198</td><td>#38</td><td>car</td><td>Speeding (55 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.83</td></tr>
+<tr><td>239</td><td>199</td><td>#24</td><td>car</td><td>Speeding (83 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.88</td></tr>
+<tr><td>240</td><td>200</td><td>#24</td><td>car</td><td>Speeding (72 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.87</td></tr>
+<tr><td>241</td><td>202</td><td>#24</td><td>car</td><td>Speeding (86 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.83</td></tr>
+<tr><td>242</td><td>203</td><td>#17</td><td>car</td><td>Speeding (88 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.46</td></tr>
+<tr><td>243</td><td>205</td><td>#24</td><td>car</td><td>Speeding (82 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.86</td></tr>
+<tr><td>244</td><td>206</td><td>#24</td><td>car</td><td>Speeding (77 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.87</td></tr>
+<tr><td>245</td><td>206</td><td>#38</td><td>car</td><td>Speeding (87 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.87</td></tr>
+<tr><td>246</td><td>207</td><td>#24</td><td>car</td><td>Speeding (81 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.84</td></tr>
+<tr><td>247</td><td>207</td><td>#38</td><td>car</td><td>Speeding (60 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.84</td></tr>
+<tr><td>248</td><td>208</td><td>#38</td><td>car</td><td>Speeding (58 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.83</td></tr>
+<tr><td>249</td><td>209</td><td>#24</td><td>car</td><td>Speeding (88 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.87</td></tr>
+<tr><td>250</td><td>210</td><td>#24</td><td>car</td><td>Speeding (71 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.88</td></tr>
+<tr><td>251</td><td>210</td><td>#38</td><td>car</td><td>Speeding (53 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.83</td></tr>
+<tr><td>252</td><td>211</td><td>#24</td><td>car</td><td>Speeding (84 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.87</td></tr>
+<tr><td>253</td><td>211</td><td>#38</td><td>car</td><td>Speeding (57 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.87</td></tr>
+<tr><td>254</td><td>213</td><td>#24</td><td>car</td><td>Speeding (85 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.88</td></tr>
+<tr><td>255</td><td>213</td><td>#38</td><td>car</td><td>Speeding (51 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.87</td></tr>
+<tr><td>256</td><td>214</td><td>#24</td><td>car</td><td>Speeding (79 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.84</td></tr>
+<tr><td>257</td><td>214</td><td>#38</td><td>car</td><td>Speeding (52 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.91</td></tr>
+<tr><td>258</td><td>215</td><td>#24</td><td>car</td><td>Speeding (83 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.87</td></tr>
+<tr><td>259</td><td>216</td><td>#24</td><td>car</td><td>Speeding (87 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.90</td></tr>
+<tr><td>260</td><td>217</td><td>#24</td><td>car</td><td>Speeding (81 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.89</td></tr>
+<tr><td>261</td><td>218</td><td>#24</td><td>car</td><td>Speeding (77 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.88</td></tr>
+<tr><td>262</td><td>218</td><td>#38</td><td>car</td><td>Speeding (50 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.87</td></tr>
+<tr><td>263</td><td>219</td><td>#24</td><td>car</td><td>Speeding (53 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.87</td></tr>
+<tr><td>264</td><td>222</td><td>#38</td><td>car</td><td>Speeding (59 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.87</td></tr>
+<tr><td>265</td><td>222</td><td>#40</td><td>car</td><td>Speeding (97 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.52</td></tr>
+<tr><td>266</td><td>227</td><td>#38</td><td>car</td><td>Speeding (60 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.83</td></tr>
+<tr><td>267</td><td>230</td><td>#38</td><td>car</td><td>Speeding (56 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.83</td></tr>
+<tr><td>268</td><td>233</td><td>#38</td><td>car</td><td>Speeding (55 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.84</td></tr>
+<tr><td>269</td><td>234</td><td>#24</td><td>car</td><td>Speeding (55 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.46</td></tr>
+<tr><td>270</td><td>236</td><td>#38</td><td>car</td><td>Speeding (54 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.85</td></tr>
+<tr><td>271</td><td>255</td><td>#48</td><td>car</td><td>Wrong-Way Driving</td><td class='sev-HIGH'>HIGH</td><td>0.47</td></tr>
+<tr><td>272</td><td>271</td><td>#47</td><td>car</td><td>Wrong-Way Driving</td><td class='sev-HIGH'>HIGH</td><td>0.45</td></tr>
+<tr><td>273</td><td>272</td><td>#17</td><td>car</td><td>Speeding (123 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.46</td></tr>
+<tr><td>274</td><td>276</td><td>#47</td><td>car</td><td>Speeding (126 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.67</td></tr>
+<tr><td>275</td><td>278</td><td>#47</td><td>car</td><td>Speeding (100 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.52</td></tr>
+<tr><td>276</td><td>280</td><td>#17</td><td>car</td><td>Speeding (84 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.46</td></tr>
+<tr><td>277</td><td>299</td><td>#51</td><td>car</td><td>Speeding (77 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.59</td></tr>
+<tr><td>278</td><td>301</td><td>#51</td><td>car</td><td>Speeding (73 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.46</td></tr>
+<tr><td>279</td><td>302</td><td>#51</td><td>car</td><td>Speeding (65 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.48</td></tr>
+<tr><td>280</td><td>304</td><td>#51</td><td>car</td><td>Speeding (102 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.54</td></tr>
+<tr><td>281</td><td>306</td><td>#51</td><td>car</td><td>Speeding (87 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.49</td></tr>
+<tr><td>282</td><td>312</td><td>#51</td><td>car</td><td>Speeding (52 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.70</td></tr>
+<tr><td>283</td><td>312</td><td>#57</td><td>car</td><td>Wrong-Way Driving</td><td class='sev-HIGH'>HIGH</td><td>0.48</td></tr>
+<tr><td>284</td><td>317</td><td>#51</td><td>car</td><td>Speeding (68 km/h)</td><td class='sev-MEDIUM'>MEDIUM</td><td>0.62</td></tr>
+<tr><td>285</td><td>324</td><td>#57</td><td>car</td><td>Speeding (107 km/h)</td><td class='sev-HIGH'>HIGH</td><td>0.48</td></tr>
+<tr><td>286</td><td>350</td><td>#63</td><td>car</td><td>Wrong-Way Driving</td><td class='sev-HIGH'>HIGH</td><td>0.66</td></tr>
+<tr><td>287</td><td>360</td><td>#63</td><td>car</td><td>Wrong-Way Driving</td><td class='sev-HIGH'>HIGH</td><td>0.75</td></tr>
+  </tbody>
+</table>
+
+<script>
+const typeData = {"Speeding (72 km/h)": 4, "Speeding (84 km/h)": 5, "Wrong-Way Driving": 19, "Speeding (97 km/h)": 3, "Speeding (69 km/h)": 5, "Speeding (62 km/h)": 6, "Speeding (66 km/h)": 7, "Speeding (55 km/h)": 9, "Speeding (147 km/h)": 1, "Speeding (56 km/h)": 6, "Speeding (141 km/h)": 2, "Speeding (52 km/h)": 12, "Speeding (64 km/h)": 6, "Speeding (74 km/h)": 2, "Speeding (73 km/h)": 4, "Speeding (81 km/h)": 5, "Speeding (50 km/h)": 4, "Speeding (85 km/h)": 5, "Speeding (51 km/h)": 11, "Speeding (93 km/h)": 5, "Speeding (57 km/h)": 7, "Speeding (63 km/h)": 5, "Speeding (71 km/h)": 5, "Speeding (123 km/h)": 2, "Speeding (86 km/h)": 3, "Speeding (61 km/h)": 7, "Speeding (65 km/h)": 5, "Speeding (67 km/h)": 5, "Speeding (53 km/h)": 10, "Speeding (58 km/h)": 6, "Speeding (60 km/h)": 6, "Speeding (54 km/h)": 6, "Speeding (143 km/h)": 1, "Speeding (80 km/h)": 1, "Speeding (59 km/h)": 5, "Speeding (328 km/h)": 1, "Speeding (68 km/h)": 4, "Speeding (70 km/h)": 3, "Speeding (78 km/h)": 3, "Speeding (87 km/h)": 6, "Speeding (96 km/h)": 3, "Speeding (83 km/h)": 5, "Speeding (82 km/h)": 3, "Speeding (88 km/h)": 4, "Speeding (79 km/h)": 3, "Speeding (91 km/h)": 3, "Speeding (98 km/h)": 2, "Speeding (92 km/h)": 1, "Speeding (102 km/h)": 2, "Speeding (103 km/h)": 1, "Speeding (129 km/h)": 2, "Speeding (110 km/h)": 2, "Speeding (168 km/h)": 1, "Speeding (105 km/h)": 1, "Speeding (111 km/h)": 1, "Speeding (152 km/h)": 1, "Speeding (124 km/h)": 1, "Speeding (139 km/h)": 1, "Speeding (108 km/h)": 1, "Speeding (107 km/h)": 2, "Speeding (145 km/h)": 1, "Speeding (185 km/h)": 1, "Speeding (193 km/h)": 1, "Speeding (199 km/h)": 1, "Speeding (195 km/h)": 1, "Speeding (197 km/h)": 1, "Speeding (180 km/h)": 1, "Speeding (169 km/h)": 1, "Speeding (161 km/h)": 1, "Speeding (160 km/h)": 1, "Speeding (159 km/h)": 1, "Speeding (597 km/h)": 1, "Speeding (94 km/h)": 2, "Speeding (142 km/h)": 1, "Speeding (140 km/h)": 1, "Speeding (126 km/h)": 2, "Speeding (136 km/h)": 1, "Speeding (117 km/h)": 1, "Speeding (112 km/h)": 1, "Speeding (115 km/h)": 2, "Speeding (104 km/h)": 1, "Speeding (100 km/h)": 2, "Speeding (95 km/h)": 1, "Speeding (428 km/h)": 1, "Red Light Running": 2, "Speeding (482 km/h)": 1, "Speeding (75 km/h)": 1, "Speeding (77 km/h)": 3};
+const vehicleData = {"car": 275, "truck": 12};
+
+const palette = [
+  '#f85149','#58a6ff','#3fb950','#d29922',
+  '#a371f7','#39d3f0','#ff9500','#ff6b6b'
+];
+
+new Chart(document.getElementById('typeChart'), {
+  type: 'doughnut',
+  data: {
+    labels: Object.keys(typeData),
+    datasets: [{ data: Object.values(typeData), backgroundColor: palette }]
+  },
+  options: {
+    plugins: { legend: { labels: { color: '#e6edf3', font: { size: 12 } } } },
+    responsive: true
+  }
+});
+
+new Chart(document.getElementById('vehicleChart'), {
+  type: 'bar',
+  data: {
+    labels: Object.keys(vehicleData),
+    datasets: [{
+      label: 'Count', data: Object.values(vehicleData),
+      backgroundColor: '#58a6ff', borderRadius: 6
+    }]
+  },
+  options: {
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { ticks: { color: '#8b949e' }, grid: { color: '#30363d' } },
+      y: { ticks: { color: '#8b949e' }, grid: { color: '#30363d' } }
+    },
+    responsive: true
+  }
+});
+</script>
+</body>
+</html>
