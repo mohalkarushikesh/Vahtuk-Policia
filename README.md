@@ -1,84 +1,148 @@
-# WORK IN PROGRESS
+# 🚦 Traffic Violation Detection System
+**YOLOv8n + ByteTrack | MP4 Video | Python 3.9+**
 
-# 🚦 Vāhatūk Polīsia: AI Traffic Violation Detection System
+Detects violations in traffic footage automatically:
 
-**Vahtuk Policia** is a real-time computer vision pipeline designed to monitor traffic intersections. It automatically detects traffic signals, identifies zebra crossings, and flags vehicles that violate "Stop" protocols using a fair-entry logic system.
-
-## ✨ Key Features
-
-* **Auto-Zebra Detection:** Uses morphological operations and Convex Hull to identify pedestrian crossings without manual ROI (Region of Interest) mapping.
-* **HSV Signal Intelligence:** Employs precise color-space filtering to distinguish between **RED**, **YELLOW**, and **GREEN** lights, even in varying lighting conditions.
-* **"Fair-Play" Violation Logic:** Only catches vehicles that *enter* the zebra zone after the light has turned red. Vehicles already stopped on the line or those that passed before the red light are ignored.
-* **Persistent Tracking:** Uses YOLOv8 ByteTrack to maintain vehicle IDs across frames, ensuring a violator is logged even if they speed away.
-
----
-
-## 🛠️ Tech Stack
-
-* **Language:** Python 3.9+
-* **Vision Core:** OpenCV
-* **Inference Engine:** Ultralytics YOLOv8
-* **Numeric Processing:** NumPy
+| Violation | Severity |
+|---|---|
+| 🔴 Red-light running | HIGH |
+| ⚡ Speeding (configurable limit) | HIGH / MEDIUM |
+| ↩️ Wrong-way driving | HIGH |
+| 🛑 Stopped in intersection | MEDIUM |
 
 ---
 
-## 🚀 How It Works
+## ⚙️ Setup
 
-### 1. Signal State Machine
-
-The system crops the traffic light detected by YOLO and converts it to **HSV (Hue, Saturation, Value)**.
-
-* **Red:** Detected across two hue ranges ( and ).
-* **Yellow:** Detected in the  range.
-* **Green:** Detected in the  range.
-
-### 2. Zebra Crossing Geometry
-
-The system applies a **Morphological Closing** kernel to "glue" white stripes into a single solid parallelogram.
-
-This creates a mathematical boundary used for the `pointPolygonTest`, which checks if a vehicle's tire (bottom-center of the bounding box) has made contact with the crossing.
-
-### 3. Violation Trigger Logic
-
-To prevent "fake tickets," the system follows this sequence:
-
-1. **Monitor Entry:** Record when a vehicle ID first touches the zebra crossing.
-2. **Verify Signal:** Check the `current_signal` at that exact moment of entry.
-3. **Flag:** If `Signal == RED` during the transition from "Road" to "Zebra," the vehicle ID is added to the `violated_ids` set.
-
----
-
-## 📦 Installation & Setup
-
-1. **Clone the repository:**
 ```bash
-git clone https://github.com/yourusername/Vahtuk-Policia.git
-cd Vahtuk-Policia
+# 1. Create a virtual environment (recommended)
+python -m venv venv
+source venv/bin/activate          # Windows: venv\Scripts\activate
 
+# 2. Install dependencies
+pip install -r requirements.txt
+# YOLOv8n weights (~6 MB) download automatically on first run
 ```
 
+---
 
-2. **Install dependencies:**
+## 🚀 Run
+
+### Basic
 ```bash
-pip install opencv-python numpy ultralytics
-
+python src/detector.py path/to/your_video.mp4
 ```
 
-
-3. **Run the detector:**
-Ensure your video file is named `traffic_video.mp4` or update the path in the script.
+### With options
 ```bash
-python main.py
-
+python src/detector.py traffic.mp4 \
+  --conf 0.5 \
+  --speed-limit 60 \
+  --device cuda          # GPU (much faster)
 ```
 
+| Flag | Default | Description |
+|---|---|---|
+| `--conf` | 0.45 | YOLO confidence threshold |
+| `--speed-limit` | 50 | Speed limit in km/h |
+| `--device` | cpu | `cpu`, `cuda`, or `mps` |
+| `--no-zones` | off | Hide zone overlays |
 
+### Generate HTML dashboard
+```bash
+python src/dashboard.py output/violation_report.json
+# Opens output/dashboard.html in your browser
+```
 
 ---
 
-## 📊 Performance Tuning
+## 📂 Output
 
-* **Sensitivity:** Adjust the `conf` parameter in `model.track` (default `0.20`) to catch more pedestrians or small vehicles.
-* **Zebra Detection:** If the crossing is not being detected, lower the threshold value in `detect_zebra_zone` from `150` to `120`.
+```
+output/
+├── annotated_output.mp4      # Annotated video with bounding boxes + labels
+├── violation_report.json     # Machine-readable structured report
+├── dashboard.html            # Interactive HTML dashboard with charts
+└── snapshots/
+    └── v_<frame>_<id>_<type>.jpg   # One frame capture per violation event
+```
 
 ---
+
+## 🗺️ Zone Calibration (important!)
+
+In `src/detector.py` → `class Config`, adjust these to match your video:
+
+```python
+RED_LIGHT_ZONE = (0.3, 0.4, 0.7, 0.6)   # intersection box (fractions 0–1)
+STOP_LINE_Y    = 0.55                     # horizontal stop line position
+WRONG_WAY_ZONE = (0.0, 0.0, 0.4, 1.0)   # lane for wrong-way check
+SPEED_LIMIT_KMH = 50
+```
+
+Use this helper to find coordinates visually:
+```python
+import cv2
+cap = cv2.VideoCapture("your_video.mp4")
+ret, frame = cap.read()
+h, w = frame.shape[:2]
+# Click on frame to get pixel coords, then divide by w or h
+cv2.imshow("frame", frame); cv2.waitKey(0)
+```
+
+---
+
+## 🔧 Advanced: Real Traffic Light Detection
+
+Replace the simulated signal in `detector.py` with actual color detection:
+
+```python
+def _detect_real_red_light(self, frame, signal_roi):
+    """
+    signal_roi: (x1, y1, x2, y2) pixels of the traffic light crop
+    """
+    crop = frame[signal_roi[1]:signal_roi[3], signal_roi[0]:signal_roi[2]]
+    hsv  = cv2.cvtColor(crop, cv2.COLOR_BGR2HSV)
+    # Red hue mask
+    m1 = cv2.inRange(hsv, (0, 120, 100),  (10, 255, 255))
+    m2 = cv2.inRange(hsv, (160, 120, 100),(179, 255, 255))
+    red_pixels = cv2.countNonZero(m1 | m2)
+    return red_pixels > 200   # threshold
+```
+
+---
+
+## 📦 Requirements
+
+- Python 3.9+
+- ultralytics ≥ 8.0  
+- opencv-python ≥ 4.8  
+- numpy ≥ 1.24  
+- GPU optional (CUDA 11.8+ for `--device cuda`)
+
+---
+
+## 📊 Sample Report JSON
+
+```json
+{
+  "total_violations": 12,
+  "by_type": {
+    "Red Light Running": 4,
+    "Speeding (63 km/h)": 6,
+    "Stopped in Intersection": 2
+  },
+  "by_vehicle": { "car": 9, "truck": 3 },
+  "violations": [
+    {
+      "frame_no": 142,
+      "track_id": 3,
+      "vehicle_class": "car",
+      "violation_type": "Red Light Running",
+      "severity": "HIGH",
+      "confidence": 0.87,
+      "snapshot_path": "output/snapshots/v_142_3_Red_Light_Running.jpg"
+    }
+  ]
+}
+```

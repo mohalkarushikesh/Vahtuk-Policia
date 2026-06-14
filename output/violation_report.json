@@ -1,0 +1,4691 @@
+{
+  "total_violations": 287,
+  "by_type": {
+    "Speeding (72 km/h)": 4,
+    "Speeding (84 km/h)": 5,
+    "Wrong-Way Driving": 19,
+    "Speeding (97 km/h)": 3,
+    "Speeding (69 km/h)": 5,
+    "Speeding (62 km/h)": 6,
+    "Speeding (66 km/h)": 7,
+    "Speeding (55 km/h)": 9,
+    "Speeding (147 km/h)": 1,
+    "Speeding (56 km/h)": 6,
+    "Speeding (141 km/h)": 2,
+    "Speeding (52 km/h)": 12,
+    "Speeding (64 km/h)": 6,
+    "Speeding (74 km/h)": 2,
+    "Speeding (73 km/h)": 4,
+    "Speeding (81 km/h)": 5,
+    "Speeding (50 km/h)": 4,
+    "Speeding (85 km/h)": 5,
+    "Speeding (51 km/h)": 11,
+    "Speeding (93 km/h)": 5,
+    "Speeding (57 km/h)": 7,
+    "Speeding (63 km/h)": 5,
+    "Speeding (71 km/h)": 5,
+    "Speeding (123 km/h)": 2,
+    "Speeding (86 km/h)": 3,
+    "Speeding (61 km/h)": 7,
+    "Speeding (65 km/h)": 5,
+    "Speeding (67 km/h)": 5,
+    "Speeding (53 km/h)": 10,
+    "Speeding (58 km/h)": 6,
+    "Speeding (60 km/h)": 6,
+    "Speeding (54 km/h)": 6,
+    "Speeding (143 km/h)": 1,
+    "Speeding (80 km/h)": 1,
+    "Speeding (59 km/h)": 5,
+    "Speeding (328 km/h)": 1,
+    "Speeding (68 km/h)": 4,
+    "Speeding (70 km/h)": 3,
+    "Speeding (78 km/h)": 3,
+    "Speeding (87 km/h)": 6,
+    "Speeding (96 km/h)": 3,
+    "Speeding (83 km/h)": 5,
+    "Speeding (82 km/h)": 3,
+    "Speeding (88 km/h)": 4,
+    "Speeding (79 km/h)": 3,
+    "Speeding (91 km/h)": 3,
+    "Speeding (98 km/h)": 2,
+    "Speeding (92 km/h)": 1,
+    "Speeding (102 km/h)": 2,
+    "Speeding (103 km/h)": 1,
+    "Speeding (129 km/h)": 2,
+    "Speeding (110 km/h)": 2,
+    "Speeding (168 km/h)": 1,
+    "Speeding (105 km/h)": 1,
+    "Speeding (111 km/h)": 1,
+    "Speeding (152 km/h)": 1,
+    "Speeding (124 km/h)": 1,
+    "Speeding (139 km/h)": 1,
+    "Speeding (108 km/h)": 1,
+    "Speeding (107 km/h)": 2,
+    "Speeding (145 km/h)": 1,
+    "Speeding (185 km/h)": 1,
+    "Speeding (193 km/h)": 1,
+    "Speeding (199 km/h)": 1,
+    "Speeding (195 km/h)": 1,
+    "Speeding (197 km/h)": 1,
+    "Speeding (180 km/h)": 1,
+    "Speeding (169 km/h)": 1,
+    "Speeding (161 km/h)": 1,
+    "Speeding (160 km/h)": 1,
+    "Speeding (159 km/h)": 1,
+    "Speeding (597 km/h)": 1,
+    "Speeding (94 km/h)": 2,
+    "Speeding (142 km/h)": 1,
+    "Speeding (140 km/h)": 1,
+    "Speeding (126 km/h)": 2,
+    "Speeding (136 km/h)": 1,
+    "Speeding (117 km/h)": 1,
+    "Speeding (112 km/h)": 1,
+    "Speeding (115 km/h)": 2,
+    "Speeding (104 km/h)": 1,
+    "Speeding (100 km/h)": 2,
+    "Speeding (95 km/h)": 1,
+    "Speeding (428 km/h)": 1,
+    "Red Light Running": 2,
+    "Speeding (482 km/h)": 1,
+    "Speeding (75 km/h)": 1,
+    "Speeding (77 km/h)": 3
+  },
+  "by_vehicle": {
+    "car": 275,
+    "truck": 12
+  },
+  "violations": [
+    {
+      "frame_no": 3,
+      "timestamp": 1781461345.4806051,
+      "track_id": 2,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (72 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1616.644287109375,
+        496.17022705078125,
+        1876.2950439453125,
+        595.17578125
+      ],
+      "confidence": 0.8018496036529541,
+      "snapshot_path": "output/snapshots/v_3_2_Speeding_(72_km/h).jpg"
+    },
+    {
+      "frame_no": 4,
+      "timestamp": 1781461345.603206,
+      "track_id": 2,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (84 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1631.439697265625,
+        497.1270751953125,
+        1892.383056640625,
+        598.2286987304688
+      ],
+      "confidence": 0.8021861910820007,
+      "snapshot_path": "output/snapshots/v_4_2_Speeding_(84_km/h).jpg"
+    },
+    {
+      "frame_no": 4,
+      "timestamp": 1781461345.6054003,
+      "track_id": 4,
+      "vehicle_class": "car",
+      "violation_type": "Wrong-Way Driving",
+      "severity": "HIGH",
+      "bbox": [
+        459.9008483886719,
+        422.15911865234375,
+        589.9981079101562,
+        496.7428894042969
+      ],
+      "confidence": 0.7587444186210632,
+      "snapshot_path": "output/snapshots/v_4_4_Wrong-Way_Driving.jpg"
+    },
+    {
+      "frame_no": 5,
+      "timestamp": 1781461345.8314998,
+      "track_id": 2,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (97 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1650.5244140625,
+        498.4495849609375,
+        1909.19287109375,
+        598.9876098632812
+      ],
+      "confidence": 0.8155747652053833,
+      "snapshot_path": "output/snapshots/v_5_2_Speeding_(97_km/h).jpg"
+    },
+    {
+      "frame_no": 5,
+      "timestamp": 1781461345.833655,
+      "track_id": 9,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (69 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1629.5098876953125,
+        434.64752197265625,
+        1732.3092041015625,
+        504.37860107421875
+      ],
+      "confidence": 0.5645423531532288,
+      "snapshot_path": "output/snapshots/v_5_9_Speeding_(69_km/h).jpg"
+    },
+    {
+      "frame_no": 6,
+      "timestamp": 1781461345.9412713,
+      "track_id": 2,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (62 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1665.5885009765625,
+        499.31048583984375,
+        1917.076416015625,
+        599.66357421875
+      ],
+      "confidence": 0.8107311129570007,
+      "snapshot_path": "output/snapshots/v_6_2_Speeding_(62_km/h).jpg"
+    },
+    {
+      "frame_no": 7,
+      "timestamp": 1781461346.0454035,
+      "track_id": 2,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (66 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1686.970947265625,
+        500.7253723144531,
+        1920.0,
+        601.0984497070312
+      ],
+      "confidence": 0.8162954449653625,
+      "snapshot_path": "output/snapshots/v_7_2_Speeding_(66_km/h).jpg"
+    },
+    {
+      "frame_no": 8,
+      "timestamp": 1781461346.1460774,
+      "track_id": 2,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (55 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1707.1544189453125,
+        496.9004821777344,
+        1920.0,
+        602.7708129882812
+      ],
+      "confidence": 0.787085771560669,
+      "snapshot_path": "output/snapshots/v_8_2_Speeding_(55_km/h).jpg"
+    },
+    {
+      "frame_no": 9,
+      "timestamp": 1781461346.245428,
+      "track_id": 4,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (147 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        488.6796569824219,
+        425.3105773925781,
+        649.380859375,
+        501.1820983886719
+      ],
+      "confidence": 0.4587443172931671,
+      "snapshot_path": "output/snapshots/v_9_4_Speeding_(147_km/h).jpg"
+    },
+    {
+      "frame_no": 9,
+      "timestamp": 1781461346.2474425,
+      "track_id": 5,
+      "vehicle_class": "truck",
+      "violation_type": "Speeding (56 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1231.939453125,
+        394.3165588378906,
+        1500.2078857421875,
+        523.5355224609375
+      ],
+      "confidence": 0.6602256894111633,
+      "snapshot_path": "output/snapshots/v_9_5_Speeding_(56_km/h).jpg"
+    },
+    {
+      "frame_no": 9,
+      "timestamp": 1781461346.2490582,
+      "track_id": 9,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (141 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1610.55126953125,
+        384.74761962890625,
+        1721.7425537109375,
+        503.2639465332031
+      ],
+      "confidence": 0.5617075562477112,
+      "snapshot_path": "output/snapshots/v_9_9_Speeding_(141_km/h).jpg"
+    },
+    {
+      "frame_no": 10,
+      "timestamp": 1781461346.346976,
+      "track_id": 2,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (52 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1741.18896484375,
+        483.6448059082031,
+        1920.0,
+        602.8298950195312
+      ],
+      "confidence": 0.8485568165779114,
+      "snapshot_path": "output/snapshots/v_10_2_Speeding_(52_km/h).jpg"
+    },
+    {
+      "frame_no": 10,
+      "timestamp": 1781461346.3490644,
+      "track_id": 9,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (66 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1623.525634765625,
+        406.248779296875,
+        1720.1092529296875,
+        503.3662109375
+      ],
+      "confidence": 0.4842378795146942,
+      "snapshot_path": "output/snapshots/v_10_9_Speeding_(66_km/h).jpg"
+    },
+    {
+      "frame_no": 11,
+      "timestamp": 1781461346.4471087,
+      "track_id": 2,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (64 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1760.3763427734375,
+        470.7725524902344,
+        1920.0,
+        601.5844116210938
+      ],
+      "confidence": 0.8171562552452087,
+      "snapshot_path": "output/snapshots/v_11_2_Speeding_(64_km/h).jpg"
+    },
+    {
+      "frame_no": 11,
+      "timestamp": 1781461346.4492278,
+      "track_id": 9,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (74 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1612.7965087890625,
+        383.3139953613281,
+        1717.7449951171875,
+        502.37896728515625
+      ],
+      "confidence": 0.5038520097732544,
+      "snapshot_path": "output/snapshots/v_11_9_Speeding_(74_km/h).jpg"
+    },
+    {
+      "frame_no": 16,
+      "timestamp": 1781461346.9659703,
+      "track_id": 2,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (73 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1797.264404296875,
+        456.75830078125,
+        1919.7408447265625,
+        577.4684448242188
+      ],
+      "confidence": 0.641856849193573,
+      "snapshot_path": "output/snapshots/v_16_2_Speeding_(73_km/h).jpg"
+    },
+    {
+      "frame_no": 16,
+      "timestamp": 1781461346.9683626,
+      "track_id": 7,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (81 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1849.78662109375,
+        512.5333862304688,
+        1918.0279541015625,
+        602.927001953125
+      ],
+      "confidence": 0.6354907155036926,
+      "snapshot_path": "output/snapshots/v_16_7_Speeding_(81_km/h).jpg"
+    },
+    {
+      "frame_no": 19,
+      "timestamp": 1781461347.2698565,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (50 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        579.310302734375,
+        428.7843322753906,
+        718.0172119140625,
+        503.41619873046875
+      ],
+      "confidence": 0.6258640289306641,
+      "snapshot_path": "output/snapshots/v_19_15_Speeding_(50_km/h).jpg"
+    },
+    {
+      "frame_no": 20,
+      "timestamp": 1781461347.3712978,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Wrong-Way Driving",
+      "severity": "HIGH",
+      "bbox": [
+        583.6698608398438,
+        430.8272705078125,
+        725.2206420898438,
+        504.8043518066406
+      ],
+      "confidence": 0.735068142414093,
+      "snapshot_path": "output/snapshots/v_20_15_Wrong-Way_Driving.jpg"
+    },
+    {
+      "frame_no": 20,
+      "timestamp": 1781461347.4646769,
+      "track_id": 9,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (85 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1612.329833984375,
+        403.61566162109375,
+        1705.8564453125,
+        496.2582092285156
+      ],
+      "confidence": 0.5940302610397339,
+      "snapshot_path": "output/snapshots/v_20_9_Speeding_(85_km/h).jpg"
+    },
+    {
+      "frame_no": 22,
+      "timestamp": 1781461347.6836846,
+      "track_id": 14,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (51 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        236.35939025878906,
+        409.6005554199219,
+        312.2922058105469,
+        470.22955322265625
+      ],
+      "confidence": 0.49197807908058167,
+      "snapshot_path": "output/snapshots/v_22_14_Speeding_(51_km/h).jpg"
+    },
+    {
+      "frame_no": 22,
+      "timestamp": 1781461347.6836846,
+      "track_id": 14,
+      "vehicle_class": "car",
+      "violation_type": "Wrong-Way Driving",
+      "severity": "HIGH",
+      "bbox": [
+        236.35939025878906,
+        409.6005554199219,
+        312.2922058105469,
+        470.22955322265625
+      ],
+      "confidence": 0.49197807908058167,
+      "snapshot_path": "output/snapshots/v_22_14_Wrong-Way_Driving.jpg"
+    },
+    {
+      "frame_no": 26,
+      "timestamp": 1781461348.194429,
+      "track_id": 9,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (93 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1608.26318359375,
+        392.6159973144531,
+        1716.0003662109375,
+        493.4863586425781
+      ],
+      "confidence": 0.4956000745296478,
+      "snapshot_path": "output/snapshots/v_26_9_Speeding_(93_km/h).jpg"
+    },
+    {
+      "frame_no": 30,
+      "timestamp": 1781461348.6219122,
+      "track_id": 2,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (62 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1684.900634765625,
+        464.7329406738281,
+        1893.26806640625,
+        557.1471557617188
+      ],
+      "confidence": 0.6686217188835144,
+      "snapshot_path": "output/snapshots/v_30_2_Speeding_(62_km/h).jpg"
+    },
+    {
+      "frame_no": 30,
+      "timestamp": 1781461348.6242926,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Wrong-Way Driving",
+      "severity": "HIGH",
+      "bbox": [
+        619.1631469726562,
+        429.7315673828125,
+        802.4979858398438,
+        508.59381103515625
+      ],
+      "confidence": 0.87773197889328,
+      "snapshot_path": "output/snapshots/v_30_15_Wrong-Way_Driving.jpg"
+    },
+    {
+      "frame_no": 31,
+      "timestamp": 1781461349.005977,
+      "track_id": 2,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (57 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1676.8304443359375,
+        463.1142883300781,
+        1880.1580810546875,
+        556.7040405273438
+      ],
+      "confidence": 0.6275873184204102,
+      "snapshot_path": "output/snapshots/v_31_2_Speeding_(57_km/h).jpg"
+    },
+    {
+      "frame_no": 33,
+      "timestamp": 1781461349.2728298,
+      "track_id": 5,
+      "vehicle_class": "truck",
+      "violation_type": "Speeding (63 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1091.5125732421875,
+        395.4173889160156,
+        1347.5296630859375,
+        510.6061096191406
+      ],
+      "confidence": 0.7013234496116638,
+      "snapshot_path": "output/snapshots/v_33_5_Speeding_(63_km/h).jpg"
+    },
+    {
+      "frame_no": 34,
+      "timestamp": 1781461349.4091995,
+      "track_id": 2,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (52 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1647.8905029296875,
+        466.3644714355469,
+        1855.17041015625,
+        553.5908203125
+      ],
+      "confidence": 0.807418942451477,
+      "snapshot_path": "output/snapshots/v_34_2_Speeding_(52_km/h).jpg"
+    },
+    {
+      "frame_no": 35,
+      "timestamp": 1781461349.534689,
+      "track_id": 2,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (71 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1645.3851318359375,
+        467.706787109375,
+        1831.2308349609375,
+        551.522705078125
+      ],
+      "confidence": 0.7023047804832458,
+      "snapshot_path": "output/snapshots/v_35_2_Speeding_(71_km/h).jpg"
+    },
+    {
+      "frame_no": 35,
+      "timestamp": 1781461349.5376136,
+      "track_id": 9,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (123 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1602.9512939453125,
+        405.9669189453125,
+        1693.447998046875,
+        486.8257141113281
+      ],
+      "confidence": 0.5440395474433899,
+      "snapshot_path": "output/snapshots/v_35_9_Speeding_(123_km/h).jpg"
+    },
+    {
+      "frame_no": 36,
+      "timestamp": 1781461349.6470275,
+      "track_id": 2,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (86 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1638.991455078125,
+        469.01629638671875,
+        1805.8370361328125,
+        551.4193725585938
+      ],
+      "confidence": 0.7926676273345947,
+      "snapshot_path": "output/snapshots/v_36_2_Speeding_(86_km/h).jpg"
+    },
+    {
+      "frame_no": 37,
+      "timestamp": 1781461349.7543616,
+      "track_id": 2,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (51 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1629.4407958984375,
+        468.02703857421875,
+        1796.3697509765625,
+        551.039306640625
+      ],
+      "confidence": 0.7874439358711243,
+      "snapshot_path": "output/snapshots/v_37_2_Speeding_(51_km/h).jpg"
+    },
+    {
+      "frame_no": 37,
+      "timestamp": 1781461349.756224,
+      "track_id": 5,
+      "vehicle_class": "truck",
+      "violation_type": "Speeding (61 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1059.9013671875,
+        395.09344482421875,
+        1333.9097900390625,
+        509.4040222167969
+      ],
+      "confidence": 0.61366868019104,
+      "snapshot_path": "output/snapshots/v_37_5_Speeding_(61_km/h).jpg"
+    },
+    {
+      "frame_no": 37,
+      "timestamp": 1781461349.758105,
+      "track_id": 14,
+      "vehicle_class": "car",
+      "violation_type": "Wrong-Way Driving",
+      "severity": "HIGH",
+      "bbox": [
+        235.50076293945312,
+        410.62200927734375,
+        337.5570983886719,
+        469.524658203125
+      ],
+      "confidence": 0.5315241813659668,
+      "snapshot_path": "output/snapshots/v_37_14_Wrong-Way_Driving.jpg"
+    },
+    {
+      "frame_no": 38,
+      "timestamp": 1781461349.965159,
+      "track_id": 5,
+      "vehicle_class": "truck",
+      "violation_type": "Speeding (65 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1054.64990234375,
+        394.9023132324219,
+        1315.02880859375,
+        509.4471435546875
+      ],
+      "confidence": 0.6233230829238892,
+      "snapshot_path": "output/snapshots/v_38_5_Speeding_(65_km/h).jpg"
+    },
+    {
+      "frame_no": 40,
+      "timestamp": 1781461350.1861286,
+      "track_id": 2,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (67 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1606.417236328125,
+        464.2529296875,
+        1770.4176025390625,
+        549.5366821289062
+      ],
+      "confidence": 0.7866149544715881,
+      "snapshot_path": "output/snapshots/v_40_2_Speeding_(67_km/h).jpg"
+    },
+    {
+      "frame_no": 41,
+      "timestamp": 1781461350.2976172,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (53 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        704.0634765625,
+        429.09075927734375,
+        898.8081665039062,
+        513.3720703125
+      ],
+      "confidence": 0.9385860562324524,
+      "snapshot_path": "output/snapshots/v_41_15_Speeding_(53_km/h).jpg"
+    },
+    {
+      "frame_no": 42,
+      "timestamp": 1781461350.4110801,
+      "track_id": 21,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (93 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1715.831787109375,
+        446.6409606933594,
+        1841.6302490234375,
+        526.8163452148438
+      ],
+      "confidence": 0.48941099643707275,
+      "snapshot_path": "output/snapshots/v_42_21_Speeding_(93_km/h).jpg"
+    },
+    {
+      "frame_no": 44,
+      "timestamp": 1781461350.6346364,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (52 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        729.842529296875,
+        428.31927490234375,
+        925.4894409179688,
+        514.015869140625
+      ],
+      "confidence": 0.9256216287612915,
+      "snapshot_path": "output/snapshots/v_44_15_Speeding_(52_km/h).jpg"
+    },
+    {
+      "frame_no": 45,
+      "timestamp": 1781461350.7398052,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (58 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        737.7686767578125,
+        428.5172424316406,
+        938.869140625,
+        514.7957763671875
+      ],
+      "confidence": 0.9015253782272339,
+      "snapshot_path": "output/snapshots/v_45_15_Speeding_(58_km/h).jpg"
+    },
+    {
+      "frame_no": 46,
+      "timestamp": 1781461350.8452125,
+      "track_id": 2,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (60 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1567.3341064453125,
+        462.5220947265625,
+        1752.4534912109375,
+        548.7064208984375
+      ],
+      "confidence": 0.6938563585281372,
+      "snapshot_path": "output/snapshots/v_46_2_Speeding_(60_km/h).jpg"
+    },
+    {
+      "frame_no": 47,
+      "timestamp": 1781461350.952172,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (50 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        754.6419067382812,
+        429.5029296875,
+        955.478515625,
+        515.6998291015625
+      ],
+      "confidence": 0.9272271394729614,
+      "snapshot_path": "output/snapshots/v_47_15_Speeding_(50_km/h).jpg"
+    },
+    {
+      "frame_no": 48,
+      "timestamp": 1781461351.061356,
+      "track_id": 3,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (50 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        334.5530700683594,
+        465.3927917480469,
+        528.7830200195312,
+        579.2974853515625
+      ],
+      "confidence": 0.7744218111038208,
+      "snapshot_path": "output/snapshots/v_48_3_Speeding_(50_km/h).jpg"
+    },
+    {
+      "frame_no": 48,
+      "timestamp": 1781461351.0638475,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (51 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        763.9595947265625,
+        429.83355712890625,
+        964.9207153320312,
+        516.4459838867188
+      ],
+      "confidence": 0.8536013960838318,
+      "snapshot_path": "output/snapshots/v_48_15_Speeding_(51_km/h).jpg"
+    },
+    {
+      "frame_no": 49,
+      "timestamp": 1781461351.169105,
+      "track_id": 2,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (53 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1548.4810791015625,
+        462.9346923828125,
+        1727.5435791015625,
+        546.9550170898438
+      ],
+      "confidence": 0.742106556892395,
+      "snapshot_path": "output/snapshots/v_49_2_Speeding_(53_km/h).jpg"
+    },
+    {
+      "frame_no": 50,
+      "timestamp": 1781461351.280032,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (54 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        781.5501098632812,
+        430.9346923828125,
+        984.9754028320312,
+        518.7322998046875
+      ],
+      "confidence": 0.8845928311347961,
+      "snapshot_path": "output/snapshots/v_50_15_Speeding_(54_km/h).jpg"
+    },
+    {
+      "frame_no": 50,
+      "timestamp": 1781461351.2822852,
+      "track_id": 21,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (143 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1676.369140625,
+        442.3834228515625,
+        1795.4957275390625,
+        524.1565551757812
+      ],
+      "confidence": 0.4763447344303131,
+      "snapshot_path": "output/snapshots/v_50_21_Speeding_(143_km/h).jpg"
+    },
+    {
+      "frame_no": 51,
+      "timestamp": 1781461351.3915071,
+      "track_id": 3,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (51 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        306.3380432128906,
+        467.44830322265625,
+        512.961181640625,
+        584.2849731445312
+      ],
+      "confidence": 0.852502703666687,
+      "snapshot_path": "output/snapshots/v_51_3_Speeding_(51_km/h).jpg"
+    },
+    {
+      "frame_no": 54,
+      "timestamp": 1781461351.7033153,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (55 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        818.547607421875,
+        431.9255676269531,
+        1023.5554809570312,
+        522.9668579101562
+      ],
+      "confidence": 0.8994594812393188,
+      "snapshot_path": "output/snapshots/v_54_15_Speeding_(55_km/h).jpg"
+    },
+    {
+      "frame_no": 55,
+      "timestamp": 1781461351.8096738,
+      "track_id": 3,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (63 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        267.320556640625,
+        471.8155212402344,
+        478.7805480957031,
+        587.7815551757812
+      ],
+      "confidence": 0.873619019985199,
+      "snapshot_path": "output/snapshots/v_55_3_Speeding_(63_km/h).jpg"
+    },
+    {
+      "frame_no": 55,
+      "timestamp": 1781461351.8122942,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (57 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        828.1691284179688,
+        430.2618408203125,
+        1035.13427734375,
+        524.2900390625
+      ],
+      "confidence": 0.8847100138664246,
+      "snapshot_path": "output/snapshots/v_55_15_Speeding_(57_km/h).jpg"
+    },
+    {
+      "frame_no": 56,
+      "timestamp": 1781461351.9191034,
+      "track_id": 21,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (80 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1663.203125,
+        438.63671875,
+        1769.9969482421875,
+        517.0213012695312
+      ],
+      "confidence": 0.5947366952896118,
+      "snapshot_path": "output/snapshots/v_56_21_Speeding_(80_km/h).jpg"
+    },
+    {
+      "frame_no": 57,
+      "timestamp": 1781461352.0243015,
+      "track_id": 3,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (58 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        247.37625122070312,
+        470.0259094238281,
+        459.5673828125,
+        593.3858642578125
+      ],
+      "confidence": 0.8272126317024231,
+      "snapshot_path": "output/snapshots/v_57_3_Speeding_(58_km/h).jpg"
+    },
+    {
+      "frame_no": 57,
+      "timestamp": 1781461352.0266743,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (64 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        844.9425659179688,
+        431.20794677734375,
+        1058.8304443359375,
+        525.0252075195312
+      ],
+      "confidence": 0.8678066730499268,
+      "snapshot_path": "output/snapshots/v_57_15_Speeding_(64_km/h).jpg"
+    },
+    {
+      "frame_no": 58,
+      "timestamp": 1781461352.1377244,
+      "track_id": 3,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (55 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        237.10086059570312,
+        472.6812438964844,
+        449.3516845703125,
+        591.800537109375
+      ],
+      "confidence": 0.907225489616394,
+      "snapshot_path": "output/snapshots/v_58_3_Speeding_(55_km/h).jpg"
+    },
+    {
+      "frame_no": 59,
+      "timestamp": 1781461352.2922432,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (62 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        866.1740112304688,
+        430.9214782714844,
+        1080.3853759765625,
+        526.5225219726562
+      ],
+      "confidence": 0.8840650916099548,
+      "snapshot_path": "output/snapshots/v_59_15_Speeding_(62_km/h).jpg"
+    },
+    {
+      "frame_no": 59,
+      "timestamp": 1781461352.2942448,
+      "track_id": 21,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (61 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1655.0570068359375,
+        437.7740173339844,
+        1758.4276123046875,
+        514.3262939453125
+      ],
+      "confidence": 0.5022269487380981,
+      "snapshot_path": "output/snapshots/v_59_21_Speeding_(61_km/h).jpg"
+    },
+    {
+      "frame_no": 60,
+      "timestamp": 1781461352.4024796,
+      "track_id": 3,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (54 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        216.89866638183594,
+        475.8277282714844,
+        435.4623718261719,
+        592.9093627929688
+      ],
+      "confidence": 0.8873594999313354,
+      "snapshot_path": "output/snapshots/v_60_3_Speeding_(54_km/h).jpg"
+    },
+    {
+      "frame_no": 60,
+      "timestamp": 1781461352.4046595,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (53 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        876.189697265625,
+        432.2176818847656,
+        1089.7744140625,
+        526.9398803710938
+      ],
+      "confidence": 0.8513665795326233,
+      "snapshot_path": "output/snapshots/v_60_15_Speeding_(53_km/h).jpg"
+    },
+    {
+      "frame_no": 61,
+      "timestamp": 1781461352.5219295,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (51 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        881.7849731445312,
+        432.2177734375,
+        1103.0181884765625,
+        528.5360107421875
+      ],
+      "confidence": 0.8301260471343994,
+      "snapshot_path": "output/snapshots/v_61_15_Speeding_(51_km/h).jpg"
+    },
+    {
+      "frame_no": 62,
+      "timestamp": 1781461352.6408975,
+      "track_id": 3,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (52 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        194.2511749267578,
+        475.86334228515625,
+        418.9751281738281,
+        594.9026489257812
+      ],
+      "confidence": 0.900143563747406,
+      "snapshot_path": "output/snapshots/v_62_3_Speeding_(52_km/h).jpg"
+    },
+    {
+      "frame_no": 62,
+      "timestamp": 1781461352.6429827,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (66 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        893.9385986328125,
+        433.9921875,
+        1114.844482421875,
+        531.3214111328125
+      ],
+      "confidence": 0.7913617491722107,
+      "snapshot_path": "output/snapshots/v_62_15_Speeding_(66_km/h).jpg"
+    },
+    {
+      "frame_no": 63,
+      "timestamp": 1781461352.7550454,
+      "track_id": 3,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (51 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        183.2541046142578,
+        477.4803466796875,
+        411.2559509277344,
+        596.0397338867188
+      ],
+      "confidence": 0.9119902849197388,
+      "snapshot_path": "output/snapshots/v_63_3_Speeding_(51_km/h).jpg"
+    },
+    {
+      "frame_no": 63,
+      "timestamp": 1781461352.7571936,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (65 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        905.685791015625,
+        433.5218811035156,
+        1127.0546875,
+        532.8955688476562
+      ],
+      "confidence": 0.8255971670150757,
+      "snapshot_path": "output/snapshots/v_63_15_Speeding_(65_km/h).jpg"
+    },
+    {
+      "frame_no": 64,
+      "timestamp": 1781461352.8643954,
+      "track_id": 3,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (57 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        171.95001220703125,
+        477.6094665527344,
+        401.46234130859375,
+        598.609619140625
+      ],
+      "confidence": 0.9228966236114502,
+      "snapshot_path": "output/snapshots/v_64_3_Speeding_(57_km/h).jpg"
+    },
+    {
+      "frame_no": 64,
+      "timestamp": 1781461352.866576,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (61 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        915.9066162109375,
+        433.2611999511719,
+        1139.4150390625,
+        534.436279296875
+      ],
+      "confidence": 0.7939736843109131,
+      "snapshot_path": "output/snapshots/v_64_15_Speeding_(61_km/h).jpg"
+    },
+    {
+      "frame_no": 65,
+      "timestamp": 1781461352.9675117,
+      "track_id": 1,
+      "vehicle_class": "car",
+      "violation_type": "Wrong-Way Driving",
+      "severity": "HIGH",
+      "bbox": [
+        96.66336822509766,
+        589.5115966796875,
+        441.57464599609375,
+        748.1754760742188
+      ],
+      "confidence": 0.9528176188468933,
+      "snapshot_path": "output/snapshots/v_65_1_Wrong-Way_Driving.jpg"
+    },
+    {
+      "frame_no": 65,
+      "timestamp": 1781461353.0605915,
+      "track_id": 3,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (66 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        158.6427459716797,
+        479.2446594238281,
+        390.6885986328125,
+        601.436279296875
+      ],
+      "confidence": 0.9148619771003723,
+      "snapshot_path": "output/snapshots/v_65_3_Speeding_(66_km/h).jpg"
+    },
+    {
+      "frame_no": 67,
+      "timestamp": 1781461353.2967594,
+      "track_id": 3,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (62 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        132.06747436523438,
+        482.3951416015625,
+        370.7235107421875,
+        607.837158203125
+      ],
+      "confidence": 0.9033510088920593,
+      "snapshot_path": "output/snapshots/v_67_3_Speeding_(62_km/h).jpg"
+    },
+    {
+      "frame_no": 67,
+      "timestamp": 1781461353.2992232,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (60 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        948.7106323242188,
+        435.2802429199219,
+        1177.6656494140625,
+        537.2613525390625
+      ],
+      "confidence": 0.8646364808082581,
+      "snapshot_path": "output/snapshots/v_67_15_Speeding_(60_km/h).jpg"
+    },
+    {
+      "frame_no": 68,
+      "timestamp": 1781461353.4025044,
+      "track_id": 3,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (61 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        120.53634643554688,
+        483.01409912109375,
+        360.69915771484375,
+        614.068115234375
+      ],
+      "confidence": 0.9100332260131836,
+      "snapshot_path": "output/snapshots/v_68_3_Speeding_(61_km/h).jpg"
+    },
+    {
+      "frame_no": 69,
+      "timestamp": 1781461353.5066772,
+      "track_id": 3,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (69 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        105.41792297363281,
+        485.1534729003906,
+        350.4444580078125,
+        615.9837036132812
+      ],
+      "confidence": 0.8971117734909058,
+      "snapshot_path": "output/snapshots/v_69_3_Speeding_(69_km/h).jpg"
+    },
+    {
+      "frame_no": 69,
+      "timestamp": 1781461353.5091214,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (72 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        972.8088989257812,
+        438.01129150390625,
+        1204.6463623046875,
+        538.8406372070312
+      ],
+      "confidence": 0.8710682988166809,
+      "snapshot_path": "output/snapshots/v_69_15_Speeding_(72_km/h).jpg"
+    },
+    {
+      "frame_no": 70,
+      "timestamp": 1781461353.613444,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (58 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        981.7699584960938,
+        439.177734375,
+        1217.17578125,
+        540.3360595703125
+      ],
+      "confidence": 0.8699491024017334,
+      "snapshot_path": "output/snapshots/v_70_15_Speeding_(58_km/h).jpg"
+    },
+    {
+      "frame_no": 71,
+      "timestamp": 1781461353.7191467,
+      "track_id": 3,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (59 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        81.40062713623047,
+        488.0967102050781,
+        330.38671875,
+        621.1016235351562
+      ],
+      "confidence": 0.9024044275283813,
+      "snapshot_path": "output/snapshots/v_71_3_Speeding_(59_km/h).jpg"
+    },
+    {
+      "frame_no": 71,
+      "timestamp": 1781461353.7217383,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (69 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        994.1878051757812,
+        442.08740234375,
+        1230.1016845703125,
+        541.123779296875
+      ],
+      "confidence": 0.8858628869056702,
+      "snapshot_path": "output/snapshots/v_71_15_Speeding_(69_km/h).jpg"
+    },
+    {
+      "frame_no": 71,
+      "timestamp": 1781461353.7237134,
+      "track_id": 5,
+      "vehicle_class": "truck",
+      "violation_type": "Speeding (328 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        876.7803955078125,
+        386.5392150878906,
+        1111.4315185546875,
+        490.90704345703125
+      ],
+      "confidence": 0.5508602857589722,
+      "snapshot_path": "output/snapshots/v_71_5_Speeding_(328_km/h).jpg"
+    },
+    {
+      "frame_no": 72,
+      "timestamp": 1781461353.8375437,
+      "track_id": 3,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (68 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        67.20105743408203,
+        488.6614074707031,
+        319.4228515625,
+        622.8697509765625
+      ],
+      "confidence": 0.9131547212600708,
+      "snapshot_path": "output/snapshots/v_72_3_Speeding_(68_km/h).jpg"
+    },
+    {
+      "frame_no": 72,
+      "timestamp": 1781461353.8399086,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (70 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1006.7876586914062,
+        444.38958740234375,
+        1243.330322265625,
+        541.949951171875
+      ],
+      "confidence": 0.8874203562736511,
+      "snapshot_path": "output/snapshots/v_72_15_Speeding_(70_km/h).jpg"
+    },
+    {
+      "frame_no": 72,
+      "timestamp": 1781461353.8432388,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Wrong-Way Driving",
+      "severity": "HIGH",
+      "bbox": [
+        358.6874084472656,
+        409.0340270996094,
+        497.72900390625,
+        494.13348388671875
+      ],
+      "confidence": 0.5700753331184387,
+      "snapshot_path": "output/snapshots/v_72_24_Wrong-Way_Driving.jpg"
+    },
+    {
+      "frame_no": 73,
+      "timestamp": 1781461354.0479705,
+      "track_id": 3,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (78 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        52.635013580322266,
+        489.73236083984375,
+        305.5199890136719,
+        625.8692626953125
+      ],
+      "confidence": 0.9238666892051697,
+      "snapshot_path": "output/snapshots/v_73_3_Speeding_(78_km/h).jpg"
+    },
+    {
+      "frame_no": 73,
+      "timestamp": 1781461354.0510316,
+      "track_id": 17,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (54 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1512.8297119140625,
+        369.8090515136719,
+        1575.4012451171875,
+        416.8385925292969
+      ],
+      "confidence": 0.4991828501224518,
+      "snapshot_path": "output/snapshots/v_73_17_Speeding_(54_km/h).jpg"
+    },
+    {
+      "frame_no": 74,
+      "timestamp": 1781461354.163931,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (63 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1030.3306884765625,
+        443.7521667480469,
+        1269.508544921875,
+        544.7192993164062
+      ],
+      "confidence": 0.9049134850502014,
+      "snapshot_path": "output/snapshots/v_74_15_Speeding_(63_km/h).jpg"
+    },
+    {
+      "frame_no": 75,
+      "timestamp": 1781461354.2777734,
+      "track_id": 3,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (71 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        25.454437255859375,
+        492.24151611328125,
+        285.2874755859375,
+        631.7742919921875
+      ],
+      "confidence": 0.8534218072891235,
+      "snapshot_path": "output/snapshots/v_75_3_Speeding_(71_km/h).jpg"
+    },
+    {
+      "frame_no": 75,
+      "timestamp": 1781461354.2805493,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (66 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        343.7579345703125,
+        408.1192932128906,
+        512.8953247070312,
+        493.9644470214844
+      ],
+      "confidence": 0.5620267391204834,
+      "snapshot_path": "output/snapshots/v_75_24_Speeding_(66_km/h).jpg"
+    },
+    {
+      "frame_no": 76,
+      "timestamp": 1781461354.396504,
+      "track_id": 3,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (87 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        5.789910316467285,
+        492.39849853515625,
+        272.7012023925781,
+        633.0109252929688
+      ],
+      "confidence": 0.8456316590309143,
+      "snapshot_path": "output/snapshots/v_76_3_Speeding_(87_km/h).jpg"
+    },
+    {
+      "frame_no": 76,
+      "timestamp": 1781461354.3989837,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (61 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        359.76104736328125,
+        409.8262023925781,
+        519.6356201171875,
+        493.4028015136719
+      ],
+      "confidence": 0.6151877641677856,
+      "snapshot_path": "output/snapshots/v_76_24_Speeding_(61_km/h).jpg"
+    },
+    {
+      "frame_no": 77,
+      "timestamp": 1781461354.5058365,
+      "track_id": 3,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (53 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        0.0,
+        494.87884521484375,
+        258.820556640625,
+        632.7940063476562
+      ],
+      "confidence": 0.8749825954437256,
+      "snapshot_path": "output/snapshots/v_77_3_Speeding_(53_km/h).jpg"
+    },
+    {
+      "frame_no": 77,
+      "timestamp": 1781461354.5083547,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (64 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1064.7025146484375,
+        447.19427490234375,
+        1308.78564453125,
+        548.1117553710938
+      ],
+      "confidence": 0.8428040146827698,
+      "snapshot_path": "output/snapshots/v_77_15_Speeding_(64_km/h).jpg"
+    },
+    {
+      "frame_no": 77,
+      "timestamp": 1781461354.5102427,
+      "track_id": 5,
+      "vehicle_class": "truck",
+      "violation_type": "Speeding (96 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        843.9033813476562,
+        387.48248291015625,
+        1083.569580078125,
+        490.9390563964844
+      ],
+      "confidence": 0.7071512937545776,
+      "snapshot_path": "output/snapshots/v_77_5_Speeding_(96_km/h).jpg"
+    },
+    {
+      "frame_no": 78,
+      "timestamp": 1781461354.6191292,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (83 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1079.40185546875,
+        447.0068359375,
+        1324.9342041015625,
+        549.1087646484375
+      ],
+      "confidence": 0.9040219783782959,
+      "snapshot_path": "output/snapshots/v_78_15_Speeding_(83_km/h).jpg"
+    },
+    {
+      "frame_no": 80,
+      "timestamp": 1781461354.8389356,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (71 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1106.35693359375,
+        450.57525634765625,
+        1349.74609375,
+        551.1220703125
+      ],
+      "confidence": 0.8899097442626953,
+      "snapshot_path": "output/snapshots/v_80_15_Speeding_(71_km/h).jpg"
+    },
+    {
+      "frame_no": 81,
+      "timestamp": 1781461354.9458218,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (82 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1118.902099609375,
+        451.54107666015625,
+        1367.6619873046875,
+        552.0701904296875
+      ],
+      "confidence": 0.8987213969230652,
+      "snapshot_path": "output/snapshots/v_81_15_Speeding_(82_km/h).jpg"
+    },
+    {
+      "frame_no": 84,
+      "timestamp": 1781461355.2608478,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (52 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        404.2241516113281,
+        417.9285583496094,
+        561.9506225585938,
+        496.2360534667969
+      ],
+      "confidence": 0.7531046271324158,
+      "snapshot_path": "output/snapshots/v_84_24_Speeding_(52_km/h).jpg"
+    },
+    {
+      "frame_no": 85,
+      "timestamp": 1781461355.3854063,
+      "track_id": 2,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (56 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1328.069091796875,
+        444.47088623046875,
+        1485.3941650390625,
+        524.617919921875
+      ],
+      "confidence": 0.5072410106658936,
+      "snapshot_path": "output/snapshots/v_85_2_Speeding_(56_km/h).jpg"
+    },
+    {
+      "frame_no": 85,
+      "timestamp": 1781461355.3874798,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (84 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1173.4586181640625,
+        455.02850341796875,
+        1423.0562744140625,
+        559.2063598632812
+      ],
+      "confidence": 0.8533017635345459,
+      "snapshot_path": "output/snapshots/v_85_15_Speeding_(84_km/h).jpg"
+    },
+    {
+      "frame_no": 86,
+      "timestamp": 1781461355.4988332,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (81 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1186.1829833984375,
+        455.4550476074219,
+        1440.3236083984375,
+        561.3187866210938
+      ],
+      "confidence": 0.788669228553772,
+      "snapshot_path": "output/snapshots/v_86_15_Speeding_(81_km/h).jpg"
+    },
+    {
+      "frame_no": 87,
+      "timestamp": 1781461355.602959,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (67 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1199.214599609375,
+        454.817138671875,
+        1452.0560302734375,
+        564.6014404296875
+      ],
+      "confidence": 0.8780869841575623,
+      "snapshot_path": "output/snapshots/v_87_15_Speeding_(67_km/h).jpg"
+    },
+    {
+      "frame_no": 88,
+      "timestamp": 1781461355.7085228,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (85 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1213.6170654296875,
+        455.3558654785156,
+        1469.064208984375,
+        566.368408203125
+      ],
+      "confidence": 0.8610583543777466,
+      "snapshot_path": "output/snapshots/v_88_15_Speeding_(85_km/h).jpg"
+    },
+    {
+      "frame_no": 89,
+      "timestamp": 1781461355.8137424,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (88 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1229.550537109375,
+        456.5190124511719,
+        1485.737548828125,
+        568.10302734375
+      ],
+      "confidence": 0.8444089293479919,
+      "snapshot_path": "output/snapshots/v_89_15_Speeding_(88_km/h).jpg"
+    },
+    {
+      "frame_no": 90,
+      "timestamp": 1781461355.9176798,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (83 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1242.92138671875,
+        455.8387451171875,
+        1503.039306640625,
+        568.5906372070312
+      ],
+      "confidence": 0.8316395878791809,
+      "snapshot_path": "output/snapshots/v_90_15_Speeding_(83_km/h).jpg"
+    },
+    {
+      "frame_no": 90,
+      "timestamp": 1781461355.9197445,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Wrong-Way Driving",
+      "severity": "HIGH",
+      "bbox": [
+        437.76708984375,
+        422.8133544921875,
+        597.2061157226562,
+        498.0676574707031
+      ],
+      "confidence": 0.8876856565475464,
+      "snapshot_path": "output/snapshots/v_90_24_Wrong-Way_Driving.jpg"
+    },
+    {
+      "frame_no": 91,
+      "timestamp": 1781461356.1178958,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (78 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1256.0577392578125,
+        453.7345275878906,
+        1518.9124755859375,
+        569.0750122070312
+      ],
+      "confidence": 0.8422456979751587,
+      "snapshot_path": "output/snapshots/v_91_15_Speeding_(78_km/h).jpg"
+    },
+    {
+      "frame_no": 92,
+      "timestamp": 1781461356.2213435,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (79 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1269.41796875,
+        454.5392761230469,
+        1534.6014404296875,
+        571.687744140625
+      ],
+      "confidence": 0.870927095413208,
+      "snapshot_path": "output/snapshots/v_92_15_Speeding_(79_km/h).jpg"
+    },
+    {
+      "frame_no": 93,
+      "timestamp": 1781461356.3280532,
+      "track_id": 3,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (51 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        0.015056991018354893,
+        515.139892578125,
+        29.441062927246094,
+        637.1817016601562
+      ],
+      "confidence": 0.5454672574996948,
+      "snapshot_path": "output/snapshots/v_93_3_Speeding_(51_km/h).jpg"
+    },
+    {
+      "frame_no": 93,
+      "timestamp": 1781461356.330619,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (82 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1282.8406982421875,
+        456.3606262207031,
+        1551.4744873046875,
+        572.9658203125
+      ],
+      "confidence": 0.826273500919342,
+      "snapshot_path": "output/snapshots/v_93_15_Speeding_(82_km/h).jpg"
+    },
+    {
+      "frame_no": 94,
+      "timestamp": 1781461356.4424021,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (91 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1300.3319091796875,
+        459.099609375,
+        1567.615966796875,
+        574.5841674804688
+      ],
+      "confidence": 0.8471381664276123,
+      "snapshot_path": "output/snapshots/v_94_15_Speeding_(91_km/h).jpg"
+    },
+    {
+      "frame_no": 95,
+      "timestamp": 1781461356.547848,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (87 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1315.355712890625,
+        461.88897705078125,
+        1584.81494140625,
+        575.3026733398438
+      ],
+      "confidence": 0.8693355917930603,
+      "snapshot_path": "output/snapshots/v_95_15_Speeding_(87_km/h).jpg"
+    },
+    {
+      "frame_no": 96,
+      "timestamp": 1781461356.6495566,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (81 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1328.3433837890625,
+        464.0794982910156,
+        1601.4930419921875,
+        577.3934326171875
+      ],
+      "confidence": 0.8793604373931885,
+      "snapshot_path": "output/snapshots/v_96_15_Speeding_(81_km/h).jpg"
+    },
+    {
+      "frame_no": 97,
+      "timestamp": 1781461356.754901,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (86 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1344.0494384765625,
+        465.775634765625,
+        1617.6944580078125,
+        578.0828247070312
+      ],
+      "confidence": 0.8794912695884705,
+      "snapshot_path": "output/snapshots/v_97_15_Speeding_(86_km/h).jpg"
+    },
+    {
+      "frame_no": 98,
+      "timestamp": 1781461356.8677194,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (98 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1361.4676513671875,
+        467.6043395996094,
+        1636.4464111328125,
+        580.0157470703125
+      ],
+      "confidence": 0.8767766356468201,
+      "snapshot_path": "output/snapshots/v_98_15_Speeding_(98_km/h).jpg"
+    },
+    {
+      "frame_no": 100,
+      "timestamp": 1781461357.0733423,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (88 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1392.9136962890625,
+        469.43212890625,
+        1669.8905029296875,
+        582.6079711914062
+      ],
+      "confidence": 0.8678327202796936,
+      "snapshot_path": "output/snapshots/v_100_15_Speeding_(88_km/h).jpg"
+    },
+    {
+      "frame_no": 101,
+      "timestamp": 1781461357.1873689,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (93 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1409.5283203125,
+        469.59405517578125,
+        1687.6165771484375,
+        584.217529296875
+      ],
+      "confidence": 0.8664290904998779,
+      "snapshot_path": "output/snapshots/v_101_15_Speeding_(93_km/h).jpg"
+    },
+    {
+      "frame_no": 102,
+      "timestamp": 1781461357.2949543,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (92 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1424.86376953125,
+        469.1454772949219,
+        1706.46337890625,
+        586.654052734375
+      ],
+      "confidence": 0.8759979605674744,
+      "snapshot_path": "output/snapshots/v_102_15_Speeding_(92_km/h).jpg"
+    },
+    {
+      "frame_no": 103,
+      "timestamp": 1781461357.4220934,
+      "track_id": 27,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (97 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1729.6075439453125,
+        430.25457763671875,
+        1885.40185546875,
+        527.6212768554688
+      ],
+      "confidence": 0.7587510347366333,
+      "snapshot_path": "output/snapshots/v_103_27_Speeding_(97_km/h).jpg"
+    },
+    {
+      "frame_no": 104,
+      "timestamp": 1781461357.5289326,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (102 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1458.84716796875,
+        472.9830322265625,
+        1744.1505126953125,
+        589.8094482421875
+      ],
+      "confidence": 0.8647523522377014,
+      "snapshot_path": "output/snapshots/v_104_15_Speeding_(102_km/h).jpg"
+    },
+    {
+      "frame_no": 106,
+      "timestamp": 1781461357.7350736,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (103 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1492.9156494140625,
+        477.3638610839844,
+        1780.115966796875,
+        591.23876953125
+      ],
+      "confidence": 0.8423726558685303,
+      "snapshot_path": "output/snapshots/v_106_15_Speeding_(103_km/h).jpg"
+    },
+    {
+      "frame_no": 106,
+      "timestamp": 1781461357.7376626,
+      "track_id": 27,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (129 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1716.3953857421875,
+        430.2709655761719,
+        1868.4097900390625,
+        526.538330078125
+      ],
+      "confidence": 0.6081493496894836,
+      "snapshot_path": "output/snapshots/v_106_27_Speeding_(129_km/h).jpg"
+    },
+    {
+      "frame_no": 107,
+      "timestamp": 1781461357.8445528,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (96 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1510.922119140625,
+        479.64910888671875,
+        1797.53759765625,
+        592.7510986328125
+      ],
+      "confidence": 0.8492892384529114,
+      "snapshot_path": "output/snapshots/v_107_15_Speeding_(96_km/h).jpg"
+    },
+    {
+      "frame_no": 107,
+      "timestamp": 1781461357.8477428,
+      "track_id": 22,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (57 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1245.9847412109375,
+        394.4325866699219,
+        1348.1639404296875,
+        453.6084899902344
+      ],
+      "confidence": 0.4639214873313904,
+      "snapshot_path": "output/snapshots/v_107_22_Speeding_(57_km/h).jpg"
+    },
+    {
+      "frame_no": 108,
+      "timestamp": 1781461357.951482,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (110 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1529.8516845703125,
+        479.2540283203125,
+        1819.509765625,
+        592.4236450195312
+      ],
+      "confidence": 0.8855457305908203,
+      "snapshot_path": "output/snapshots/v_108_15_Speeding_(110_km/h).jpg"
+    },
+    {
+      "frame_no": 110,
+      "timestamp": 1781461358.181847,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (85 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1563.2027587890625,
+        481.34197998046875,
+        1853.7969970703125,
+        594.171630859375
+      ],
+      "confidence": 0.8907161355018616,
+      "snapshot_path": "output/snapshots/v_110_15_Speeding_(85_km/h).jpg"
+    },
+    {
+      "frame_no": 110,
+      "timestamp": 1781461358.1850672,
+      "track_id": 27,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (168 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1711.9365234375,
+        428.03765869140625,
+        1820.3563232421875,
+        494.9593811035156
+      ],
+      "confidence": 0.485377699136734,
+      "snapshot_path": "output/snapshots/v_110_27_Speeding_(168_km/h).jpg"
+    },
+    {
+      "frame_no": 111,
+      "timestamp": 1781461358.2936401,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (105 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1581.786376953125,
+        482.36273193359375,
+        1874.09814453125,
+        595.2161865234375
+      ],
+      "confidence": 0.8470907807350159,
+      "snapshot_path": "output/snapshots/v_111_15_Speeding_(105_km/h).jpg"
+    },
+    {
+      "frame_no": 112,
+      "timestamp": 1781461358.4151714,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (111 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1602.007568359375,
+        484.07135009765625,
+        1895.0921630859375,
+        596.2778930664062
+      ],
+      "confidence": 0.8751083016395569,
+      "snapshot_path": "output/snapshots/v_112_15_Speeding_(111_km/h).jpg"
+    },
+    {
+      "frame_no": 114,
+      "timestamp": 1781461358.6347415,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (59 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1635.168701171875,
+        482.3769226074219,
+        1920.0,
+        601.56005859375
+      ],
+      "confidence": 0.8790946006774902,
+      "snapshot_path": "output/snapshots/v_114_15_Speeding_(59_km/h).jpg"
+    },
+    {
+      "frame_no": 115,
+      "timestamp": 1781461358.7412746,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (52 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1654.556884765625,
+        481.9432678222656,
+        1920.0,
+        603.6160278320312
+      ],
+      "confidence": 0.8821572661399841,
+      "snapshot_path": "output/snapshots/v_115_15_Speeding_(52_km/h).jpg"
+    },
+    {
+      "frame_no": 116,
+      "timestamp": 1781461358.8495731,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (55 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1674.2406005859375,
+        483.8328857421875,
+        1920.0,
+        606.697265625
+      ],
+      "confidence": 0.8860689401626587,
+      "snapshot_path": "output/snapshots/v_116_15_Speeding_(55_km/h).jpg"
+    },
+    {
+      "frame_no": 117,
+      "timestamp": 1781461358.9550734,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (51 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1692.6300048828125,
+        487.1737976074219,
+        1920.0,
+        607.0657348632812
+      ],
+      "confidence": 0.8780777454376221,
+      "snapshot_path": "output/snapshots/v_117_15_Speeding_(51_km/h).jpg"
+    },
+    {
+      "frame_no": 117,
+      "timestamp": 1781461358.9582148,
+      "track_id": 27,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (152 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1668.6290283203125,
+        418.8209533691406,
+        1807.8009033203125,
+        510.9074401855469
+      ],
+      "confidence": 0.5048727989196777,
+      "snapshot_path": "output/snapshots/v_117_27_Speeding_(152_km/h).jpg"
+    },
+    {
+      "frame_no": 120,
+      "timestamp": 1781461359.281918,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (59 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1753.8406982421875,
+        488.99310302734375,
+        1920.0,
+        604.3223876953125
+      ],
+      "confidence": 0.851787805557251,
+      "snapshot_path": "output/snapshots/v_120_15_Speeding_(59_km/h).jpg"
+    },
+    {
+      "frame_no": 120,
+      "timestamp": 1781461359.2838743,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Wrong-Way Driving",
+      "severity": "HIGH",
+      "bbox": [
+        614.0330810546875,
+        430.399169921875,
+        792.835205078125,
+        509.08221435546875
+      ],
+      "confidence": 0.9183582067489624,
+      "snapshot_path": "output/snapshots/v_120_24_Wrong-Way_Driving.jpg"
+    },
+    {
+      "frame_no": 122,
+      "timestamp": 1781461359.624288,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (52 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1789.5753173828125,
+        491.3533630371094,
+        1920.0,
+        604.50048828125
+      ],
+      "confidence": 0.7560797333717346,
+      "snapshot_path": "output/snapshots/v_122_15_Speeding_(52_km/h).jpg"
+    },
+    {
+      "frame_no": 122,
+      "timestamp": 1781461359.6271489,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (124 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1.2366523742675781,
+        919.4693603515625,
+        306.9387512207031,
+        1071.1773681640625
+      ],
+      "confidence": 0.8158067464828491,
+      "snapshot_path": "output/snapshots/v_122_34_Speeding_(124_km/h).jpg"
+    },
+    {
+      "frame_no": 122,
+      "timestamp": 1781461359.6271489,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Wrong-Way Driving",
+      "severity": "HIGH",
+      "bbox": [
+        1.2366523742675781,
+        919.4693603515625,
+        306.9387512207031,
+        1071.1773681640625
+      ],
+      "confidence": 0.8158067464828491,
+      "snapshot_path": "output/snapshots/v_122_34_Wrong-Way_Driving.jpg"
+    },
+    {
+      "frame_no": 123,
+      "timestamp": 1781461359.8373196,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (64 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1813.3829345703125,
+        493.3269958496094,
+        1920.0,
+        603.6260986328125
+      ],
+      "confidence": 0.7044843435287476,
+      "snapshot_path": "output/snapshots/v_123_15_Speeding_(64_km/h).jpg"
+    },
+    {
+      "frame_no": 123,
+      "timestamp": 1781461359.8405259,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (139 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1.0335872173309326,
+        893.5328369140625,
+        350.8340759277344,
+        1069.6253662109375
+      ],
+      "confidence": 0.8359022736549377,
+      "snapshot_path": "output/snapshots/v_123_34_Speeding_(139_km/h).jpg"
+    },
+    {
+      "frame_no": 124,
+      "timestamp": 1781461359.9456563,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (55 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1833.33935546875,
+        495.8219299316406,
+        1920.0,
+        604.76318359375
+      ],
+      "confidence": 0.7629433870315552,
+      "snapshot_path": "output/snapshots/v_124_15_Speeding_(55_km/h).jpg"
+    },
+    {
+      "frame_no": 124,
+      "timestamp": 1781461359.948634,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (110 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        0.32863447070121765,
+        887.5624389648438,
+        392.1519775390625,
+        1070.6231689453125
+      ],
+      "confidence": 0.8076626658439636,
+      "snapshot_path": "output/snapshots/v_124_34_Speeding_(110_km/h).jpg"
+    },
+    {
+      "frame_no": 125,
+      "timestamp": 1781461360.0557914,
+      "track_id": 15,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (56 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1854.0953369140625,
+        497.2057800292969,
+        1919.7762451171875,
+        605.1279296875
+      ],
+      "confidence": 0.8056589365005493,
+      "snapshot_path": "output/snapshots/v_125_15_Speeding_(56_km/h).jpg"
+    },
+    {
+      "frame_no": 125,
+      "timestamp": 1781461360.0588746,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (129 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        0.6183373928070068,
+        865.2896118164062,
+        433.25677490234375,
+        1069.067138671875
+      ],
+      "confidence": 0.8263804912567139,
+      "snapshot_path": "output/snapshots/v_125_34_Speeding_(129_km/h).jpg"
+    },
+    {
+      "frame_no": 126,
+      "timestamp": 1781461360.1643877,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (108 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        0.6208957433700562,
+        850.1543579101562,
+        470.5672302246094,
+        1069.2548828125
+      ],
+      "confidence": 0.8956131935119629,
+      "snapshot_path": "output/snapshots/v_126_34_Speeding_(108_km/h).jpg"
+    },
+    {
+      "frame_no": 127,
+      "timestamp": 1781461360.277736,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (107 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        0.5063135027885437,
+        836.8468017578125,
+        508.2251281738281,
+        1070.323974609375
+      ],
+      "confidence": 0.9188995361328125,
+      "snapshot_path": "output/snapshots/v_127_34_Speeding_(107_km/h).jpg"
+    },
+    {
+      "frame_no": 128,
+      "timestamp": 1781461360.39371,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (98 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        0.2093738317489624,
+        823.0917358398438,
+        542.8015747070312,
+        1072.254150390625
+      ],
+      "confidence": 0.9380440711975098,
+      "snapshot_path": "output/snapshots/v_128_34_Speeding_(98_km/h).jpg"
+    },
+    {
+      "frame_no": 129,
+      "timestamp": 1781461360.521608,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (53 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        679.177734375,
+        433.44281005859375,
+        865.1397094726562,
+        512.0750122070312
+      ],
+      "confidence": 0.904474675655365,
+      "snapshot_path": "output/snapshots/v_129_24_Speeding_(53_km/h).jpg"
+    },
+    {
+      "frame_no": 129,
+      "timestamp": 1781461360.5241747,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (91 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        0.022732913494110107,
+        808.8199462890625,
+        574.4812622070312,
+        1074.028076171875
+      ],
+      "confidence": 0.9438809752464294,
+      "snapshot_path": "output/snapshots/v_129_34_Speeding_(91_km/h).jpg"
+    },
+    {
+      "frame_no": 130,
+      "timestamp": 1781461360.6265824,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (145 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        20.313627243041992,
+        801.3432006835938,
+        607.56982421875,
+        1076.7960205078125
+      ],
+      "confidence": 0.9424917101860046,
+      "snapshot_path": "output/snapshots/v_130_34_Speeding_(145_km/h).jpg"
+    },
+    {
+      "frame_no": 131,
+      "timestamp": 1781461360.7314742,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (185 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        59.12663269042969,
+        791.1651611328125,
+        636.5831909179688,
+        1077.461669921875
+      ],
+      "confidence": 0.9458367228507996,
+      "snapshot_path": "output/snapshots/v_131_34_Speeding_(185_km/h).jpg"
+    },
+    {
+      "frame_no": 132,
+      "timestamp": 1781461360.8454263,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (193 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        101.22393035888672,
+        780.9488525390625,
+        665.215576171875,
+        1076.0458984375
+      ],
+      "confidence": 0.9286900162696838,
+      "snapshot_path": "output/snapshots/v_132_34_Speeding_(193_km/h).jpg"
+    },
+    {
+      "frame_no": 133,
+      "timestamp": 1781461360.956539,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (57 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        705.3599243164062,
+        432.74273681640625,
+        898.42236328125,
+        513.3877563476562
+      ],
+      "confidence": 0.930239737033844,
+      "snapshot_path": "output/snapshots/v_133_24_Speeding_(57_km/h).jpg"
+    },
+    {
+      "frame_no": 133,
+      "timestamp": 1781461360.95905,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (199 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        146.65614318847656,
+        771.5496215820312,
+        691.0714111328125,
+        1066.43017578125
+      ],
+      "confidence": 0.933736264705658,
+      "snapshot_path": "output/snapshots/v_133_34_Speeding_(199_km/h).jpg"
+    },
+    {
+      "frame_no": 134,
+      "timestamp": 1781461361.0709488,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (195 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        188.36627197265625,
+        762.0444946289062,
+        718.4212646484375,
+        1055.1121826171875
+      ],
+      "confidence": 0.9156184792518616,
+      "snapshot_path": "output/snapshots/v_134_34_Speeding_(195_km/h).jpg"
+    },
+    {
+      "frame_no": 135,
+      "timestamp": 1781461361.1830146,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (197 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        230.31346130371094,
+        753.450439453125,
+        745.005126953125,
+        1038.907470703125
+      ],
+      "confidence": 0.8982260227203369,
+      "snapshot_path": "output/snapshots/v_135_34_Speeding_(197_km/h).jpg"
+    },
+    {
+      "frame_no": 136,
+      "timestamp": 1781461361.3007255,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (52 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        726.81103515625,
+        432.35565185546875,
+        923.1746826171875,
+        513.6931762695312
+      ],
+      "confidence": 0.9168297648429871,
+      "snapshot_path": "output/snapshots/v_136_24_Speeding_(52_km/h).jpg"
+    },
+    {
+      "frame_no": 137,
+      "timestamp": 1781461361.4118195,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (180 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        311.07952880859375,
+        734.4175415039062,
+        793.4226684570312,
+        1008.9714965820312
+      ],
+      "confidence": 0.8964548707008362,
+      "snapshot_path": "output/snapshots/v_137_34_Speeding_(180_km/h).jpg"
+    },
+    {
+      "frame_no": 138,
+      "timestamp": 1781461361.5434337,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (169 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        348.5584716796875,
+        727.9452514648438,
+        815.462890625,
+        995.7286376953125
+      ],
+      "confidence": 0.9259322285652161,
+      "snapshot_path": "output/snapshots/v_138_34_Speeding_(169_km/h).jpg"
+    },
+    {
+      "frame_no": 139,
+      "timestamp": 1781461361.6488428,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (54 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        751.2732543945312,
+        431.9720458984375,
+        948.4422607421875,
+        513.896728515625
+      ],
+      "confidence": 0.9129859209060669,
+      "snapshot_path": "output/snapshots/v_139_24_Speeding_(54_km/h).jpg"
+    },
+    {
+      "frame_no": 139,
+      "timestamp": 1781461361.651264,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (161 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        383.12017822265625,
+        719.3462524414062,
+        835.6875610351562,
+        980.6077880859375
+      ],
+      "confidence": 0.9120346903800964,
+      "snapshot_path": "output/snapshots/v_139_34_Speeding_(161_km/h).jpg"
+    },
+    {
+      "frame_no": 140,
+      "timestamp": 1781461361.7549553,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (160 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        416.3252258300781,
+        710.9102172851562,
+        856.7155151367188,
+        965.1780395507812
+      ],
+      "confidence": 0.9253191947937012,
+      "snapshot_path": "output/snapshots/v_140_34_Speeding_(160_km/h).jpg"
+    },
+    {
+      "frame_no": 141,
+      "timestamp": 1781461361.8659828,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (159 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        448.72283935546875,
+        702.6885986328125,
+        879.19140625,
+        951.988037109375
+      ],
+      "confidence": 0.9165634512901306,
+      "snapshot_path": "output/snapshots/v_141_34_Speeding_(159_km/h).jpg"
+    },
+    {
+      "frame_no": 141,
+      "timestamp": 1781461361.8681676,
+      "track_id": 38,
+      "vehicle_class": "car",
+      "violation_type": "Wrong-Way Driving",
+      "severity": "HIGH",
+      "bbox": [
+        316.5943603515625,
+        402.16015625,
+        453.5310974121094,
+        489.7569274902344
+      ],
+      "confidence": 0.5959264039993286,
+      "snapshot_path": "output/snapshots/v_141_38_Wrong-Way_Driving.jpg"
+    },
+    {
+      "frame_no": 141,
+      "timestamp": 1781461361.9666278,
+      "track_id": 5,
+      "vehicle_class": "truck",
+      "violation_type": "Speeding (597 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        560.666015625,
+        380.35772705078125,
+        747.1334838867188,
+        473.9208984375
+      ],
+      "confidence": 0.5445267558097839,
+      "snapshot_path": "output/snapshots/v_141_5_Speeding_(597_km/h).jpg"
+    },
+    {
+      "frame_no": 142,
+      "timestamp": 1781461362.0797737,
+      "track_id": 30,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (94 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        980.6116333007812,
+        429.2308349609375,
+        1119.681640625,
+        495.1691589355469
+      ],
+      "confidence": 0.6586673855781555,
+      "snapshot_path": "output/snapshots/v_142_30_Speeding_(94_km/h).jpg"
+    },
+    {
+      "frame_no": 142,
+      "timestamp": 1781461362.0827925,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (142 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        479.1773681640625,
+        696.70703125,
+        898.147216796875,
+        939.4359130859375
+      ],
+      "confidence": 0.9272122383117676,
+      "snapshot_path": "output/snapshots/v_142_34_Speeding_(142_km/h).jpg"
+    },
+    {
+      "frame_no": 143,
+      "timestamp": 1781461362.19533,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (140 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        509.4897766113281,
+        690.3609619140625,
+        916.3021240234375,
+        927.2538452148438
+      ],
+      "confidence": 0.9095886945724487,
+      "snapshot_path": "output/snapshots/v_143_34_Speeding_(140_km/h).jpg"
+    },
+    {
+      "frame_no": 144,
+      "timestamp": 1781461362.303434,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (141 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        540.0931396484375,
+        685.8366088867188,
+        934.9324951171875,
+        914.4365234375
+      ],
+      "confidence": 0.9207862019538879,
+      "snapshot_path": "output/snapshots/v_144_34_Speeding_(141_km/h).jpg"
+    },
+    {
+      "frame_no": 144,
+      "timestamp": 1781461362.3055193,
+      "track_id": 38,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (126 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        359.4078369140625,
+        405.3742980957031,
+        469.1123962402344,
+        486.6056213378906
+      ],
+      "confidence": 0.4855351448059082,
+      "snapshot_path": "output/snapshots/v_144_38_Speeding_(126_km/h).jpg"
+    },
+    {
+      "frame_no": 145,
+      "timestamp": 1781461362.4322045,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (136 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        569.6763305664062,
+        680.6852416992188,
+        953.0282592773438,
+        903.4912719726562
+      ],
+      "confidence": 0.9025793075561523,
+      "snapshot_path": "output/snapshots/v_145_34_Speeding_(136_km/h).jpg"
+    },
+    {
+      "frame_no": 145,
+      "timestamp": 1781461362.4342966,
+      "track_id": 38,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (52 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        374.4798278808594,
+        406.1843566894531,
+        473.3636779785156,
+        487.0359802246094
+      ],
+      "confidence": 0.5682092905044556,
+      "snapshot_path": "output/snapshots/v_145_38_Speeding_(52_km/h).jpg"
+    },
+    {
+      "frame_no": 145,
+      "timestamp": 1781461362.4358954,
+      "track_id": 5,
+      "vehicle_class": "truck",
+      "violation_type": "Speeding (63 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        546.9382934570312,
+        379.8861083984375,
+        732.2291259765625,
+        471.5000915527344
+      ],
+      "confidence": 0.5588359832763672,
+      "snapshot_path": "output/snapshots/v_145_5_Speeding_(63_km/h).jpg"
+    },
+    {
+      "frame_no": 146,
+      "timestamp": 1781461362.572265,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (58 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        808.4688110351562,
+        434.9953308105469,
+        1011.6502075195312,
+        518.51953125
+      ],
+      "confidence": 0.839686393737793,
+      "snapshot_path": "output/snapshots/v_146_24_Speeding_(58_km/h).jpg"
+    },
+    {
+      "frame_no": 147,
+      "timestamp": 1781461362.681319,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (117 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        619.8967895507812,
+        668.3695678710938,
+        987.7542114257812,
+        881.90380859375
+      ],
+      "confidence": 0.9050770401954651,
+      "snapshot_path": "output/snapshots/v_147_34_Speeding_(117_km/h).jpg"
+    },
+    {
+      "frame_no": 148,
+      "timestamp": 1781461362.7924175,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (112 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        644.8907470703125,
+        663.1961669921875,
+        1001.7372436523438,
+        872.6626586914062
+      ],
+      "confidence": 0.9116294384002686,
+      "snapshot_path": "output/snapshots/v_148_34_Speeding_(112_km/h).jpg"
+    },
+    {
+      "frame_no": 149,
+      "timestamp": 1781461362.9055707,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (115 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        669.8692626953125,
+        657.2341918945312,
+        1016.210205078125,
+        862.9468383789062
+      ],
+      "confidence": 0.9165176153182983,
+      "snapshot_path": "output/snapshots/v_149_34_Speeding_(115_km/h).jpg"
+    },
+    {
+      "frame_no": 150,
+      "timestamp": 1781461363.011179,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (115 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        692.4636840820312,
+        650.6215209960938,
+        1033.189697265625,
+        853.8161010742188
+      ],
+      "confidence": 0.9296790957450867,
+      "snapshot_path": "output/snapshots/v_150_34_Speeding_(115_km/h).jpg"
+    },
+    {
+      "frame_no": 150,
+      "timestamp": 1781461363.0135589,
+      "track_id": 38,
+      "vehicle_class": "car",
+      "violation_type": "Wrong-Way Driving",
+      "severity": "HIGH",
+      "bbox": [
+        378.4515075683594,
+        406.49603271484375,
+        503.28076171875,
+        490.0158996582031
+      ],
+      "confidence": 0.669405996799469,
+      "snapshot_path": "output/snapshots/v_150_38_Wrong-Way_Driving.jpg"
+    },
+    {
+      "frame_no": 150,
+      "timestamp": 1781461363.113111,
+      "track_id": 5,
+      "vehicle_class": "truck",
+      "violation_type": "Speeding (69 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        528.5110473632812,
+        381.5835266113281,
+        709.5809936523438,
+        468.127197265625
+      ],
+      "confidence": 0.48499536514282227,
+      "snapshot_path": "output/snapshots/v_150_5_Speeding_(69_km/h).jpg"
+    },
+    {
+      "frame_no": 151,
+      "timestamp": 1781461363.21854,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (104 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        714.4898071289062,
+        644.8396606445312,
+        1046.5584716796875,
+        844.113525390625
+      ],
+      "confidence": 0.9067733287811279,
+      "snapshot_path": "output/snapshots/v_151_34_Speeding_(104_km/h).jpg"
+    },
+    {
+      "frame_no": 152,
+      "timestamp": 1781461363.3279545,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (60 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        858.82568359375,
+        431.1346435546875,
+        1071.0345458984375,
+        524.2388916015625
+      ],
+      "confidence": 0.831996738910675,
+      "snapshot_path": "output/snapshots/v_152_24_Speeding_(60_km/h).jpg"
+    },
+    {
+      "frame_no": 152,
+      "timestamp": 1781461363.3306434,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (100 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        736.2993774414062,
+        640.603515625,
+        1059.2596435546875,
+        834.8120727539062
+      ],
+      "confidence": 0.8929413557052612,
+      "snapshot_path": "output/snapshots/v_152_34_Speeding_(100_km/h).jpg"
+    },
+    {
+      "frame_no": 153,
+      "timestamp": 1781461363.440685,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (91 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        755.2543334960938,
+        638.84716796875,
+        1072.72900390625,
+        827.5718994140625
+      ],
+      "confidence": 0.8874262571334839,
+      "snapshot_path": "output/snapshots/v_153_34_Speeding_(91_km/h).jpg"
+    },
+    {
+      "frame_no": 154,
+      "timestamp": 1781461363.5584579,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (51 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        877.4940795898438,
+        427.8779602050781,
+        1089.245849609375,
+        524.5956420898438
+      ],
+      "confidence": 0.8037496209144592,
+      "snapshot_path": "output/snapshots/v_154_24_Speeding_(51_km/h).jpg"
+    },
+    {
+      "frame_no": 154,
+      "timestamp": 1781461363.560905,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (94 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        774.853271484375,
+        633.75244140625,
+        1086.1878662109375,
+        821.1924438476562
+      ],
+      "confidence": 0.8904528617858887,
+      "snapshot_path": "output/snapshots/v_154_34_Speeding_(94_km/h).jpg"
+    },
+    {
+      "frame_no": 155,
+      "timestamp": 1781461363.670958,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (95 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        794.4874877929688,
+        630.0009765625,
+        1099.891357421875,
+        813.8956298828125
+      ],
+      "confidence": 0.8979930281639099,
+      "snapshot_path": "output/snapshots/v_155_34_Speeding_(95_km/h).jpg"
+    },
+    {
+      "frame_no": 156,
+      "timestamp": 1781461363.7787905,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (53 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        893.1298217773438,
+        427.21331787109375,
+        1108.5159912109375,
+        525.74072265625
+      ],
+      "confidence": 0.8195149898529053,
+      "snapshot_path": "output/snapshots/v_156_24_Speeding_(53_km/h).jpg"
+    },
+    {
+      "frame_no": 156,
+      "timestamp": 1781461363.7813396,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (96 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        814.1519165039062,
+        624.6002197265625,
+        1113.5565185546875,
+        806.9874877929688
+      ],
+      "confidence": 0.8890237212181091,
+      "snapshot_path": "output/snapshots/v_156_34_Speeding_(96_km/h).jpg"
+    },
+    {
+      "frame_no": 157,
+      "timestamp": 1781461363.8909461,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (55 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        902.7554931640625,
+        428.73468017578125,
+        1119.2088623046875,
+        526.3306884765625
+      ],
+      "confidence": 0.8248568773269653,
+      "snapshot_path": "output/snapshots/v_157_24_Speeding_(55_km/h).jpg"
+    },
+    {
+      "frame_no": 157,
+      "timestamp": 1781461363.8933394,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (83 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        830.6925048828125,
+        619.0025634765625,
+        1124.261474609375,
+        798.5277099609375
+      ],
+      "confidence": 0.9184855222702026,
+      "snapshot_path": "output/snapshots/v_157_34_Speeding_(83_km/h).jpg"
+    },
+    {
+      "frame_no": 158,
+      "timestamp": 1781461364.0060303,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (79 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        847.40576171875,
+        615.1278076171875,
+        1135.2122802734375,
+        792.3993530273438
+      ],
+      "confidence": 0.8950703144073486,
+      "snapshot_path": "output/snapshots/v_158_34_Speeding_(79_km/h).jpg"
+    },
+    {
+      "frame_no": 159,
+      "timestamp": 1781461364.1197205,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (84 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        864.5076904296875,
+        612.286865234375,
+        1147.5638427734375,
+        785.0218505859375
+      ],
+      "confidence": 0.8872348666191101,
+      "snapshot_path": "output/snapshots/v_159_34_Speeding_(84_km/h).jpg"
+    },
+    {
+      "frame_no": 160,
+      "timestamp": 1781461364.2246041,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (74 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        922.5888061523438,
+        433.6398620605469,
+        1150.22265625,
+        530.8275756835938
+      ],
+      "confidence": 0.8275398015975952,
+      "snapshot_path": "output/snapshots/v_160_24_Speeding_(74_km/h).jpg"
+    },
+    {
+      "frame_no": 160,
+      "timestamp": 1781461364.2268963,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (73 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        880.2622680664062,
+        607.9532470703125,
+        1156.727783203125,
+        778.6710205078125
+      ],
+      "confidence": 0.8977254629135132,
+      "snapshot_path": "output/snapshots/v_160_34_Speeding_(73_km/h).jpg"
+    },
+    {
+      "frame_no": 160,
+      "timestamp": 1781461364.2282312,
+      "track_id": 38,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (67 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        407.16314697265625,
+        414.0364990234375,
+        561.0962524414062,
+        494.3640441894531
+      ],
+      "confidence": 0.6860330104827881,
+      "snapshot_path": "output/snapshots/v_160_38_Speeding_(67_km/h).jpg"
+    },
+    {
+      "frame_no": 161,
+      "timestamp": 1781461364.334582,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (68 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        937.271728515625,
+        435.2137145996094,
+        1160.273681640625,
+        533.2605590820312
+      ],
+      "confidence": 0.8315584063529968,
+      "snapshot_path": "output/snapshots/v_161_24_Speeding_(68_km/h).jpg"
+    },
+    {
+      "frame_no": 161,
+      "timestamp": 1781461364.3368802,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (72 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        895.2169189453125,
+        603.66064453125,
+        1166.5721435546875,
+        773.5844116210938
+      ],
+      "confidence": 0.8824002146720886,
+      "snapshot_path": "output/snapshots/v_161_34_Speeding_(72_km/h).jpg"
+    },
+    {
+      "frame_no": 161,
+      "timestamp": 1781461364.3388398,
+      "track_id": 30,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (428 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        884.245361328125,
+        420.773193359375,
+        1022.5701293945312,
+        488.3387756347656
+      ],
+      "confidence": 0.666705846786499,
+      "snapshot_path": "output/snapshots/v_161_30_Speeding_(428_km/h).jpg"
+    },
+    {
+      "frame_no": 162,
+      "timestamp": 1781461364.4505339,
+      "track_id": 5,
+      "vehicle_class": "truck",
+      "violation_type": "Speeding (93 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        486.3761291503906,
+        379.7560729980469,
+        657.2727661132812,
+        467.1070251464844
+      ],
+      "confidence": 0.5320756435394287,
+      "snapshot_path": "output/snapshots/v_162_5_Speeding_(93_km/h).jpg"
+    },
+    {
+      "frame_no": 163,
+      "timestamp": 1781461364.567185,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (64 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        956.2434692382812,
+        439.9627380371094,
+        1181.955322265625,
+        534.5332641601562
+      ],
+      "confidence": 0.8165128231048584,
+      "snapshot_path": "output/snapshots/v_163_24_Speeding_(64_km/h).jpg"
+    },
+    {
+      "frame_no": 163,
+      "timestamp": 1781461364.5696328,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (67 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        923.865478515625,
+        596.752685546875,
+        1186.6634521484375,
+        763.0209350585938
+      ],
+      "confidence": 0.8722752928733826,
+      "snapshot_path": "output/snapshots/v_163_34_Speeding_(67_km/h).jpg"
+    },
+    {
+      "frame_no": 164,
+      "timestamp": 1781461364.6820893,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (62 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        936.6296997070312,
+        593.7518310546875,
+        1195.00537109375,
+        756.8298950195312
+      ],
+      "confidence": 0.873376190662384,
+      "snapshot_path": "output/snapshots/v_164_34_Speeding_(62_km/h).jpg"
+    },
+    {
+      "frame_no": 164,
+      "timestamp": 1781461364.684456,
+      "track_id": 30,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (56 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        863.7739868164062,
+        420.640869140625,
+        1001.7824096679688,
+        489.0707702636719
+      ],
+      "confidence": 0.7610585689544678,
+      "snapshot_path": "output/snapshots/v_164_30_Speeding_(56_km/h).jpg"
+    },
+    {
+      "frame_no": 165,
+      "timestamp": 1781461364.788317,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (59 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        949.072998046875,
+        591.3217163085938,
+        1203.28955078125,
+        751.8944702148438
+      ],
+      "confidence": 0.8399033546447754,
+      "snapshot_path": "output/snapshots/v_165_34_Speeding_(59_km/h).jpg"
+    },
+    {
+      "frame_no": 166,
+      "timestamp": 1781461364.8932972,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (65 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        985.9813232421875,
+        446.8152770996094,
+        1213.1810302734375,
+        538.027099609375
+      ],
+      "confidence": 0.8113082647323608,
+      "snapshot_path": "output/snapshots/v_166_24_Speeding_(65_km/h).jpg"
+    },
+    {
+      "frame_no": 166,
+      "timestamp": 1781461364.8955176,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (61 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        961.4821166992188,
+        587.4798583984375,
+        1212.0362548828125,
+        747.7722778320312
+      ],
+      "confidence": 0.8647544980049133,
+      "snapshot_path": "output/snapshots/v_166_34_Speeding_(61_km/h).jpg"
+    },
+    {
+      "frame_no": 166,
+      "timestamp": 1781461364.897746,
+      "track_id": 42,
+      "vehicle_class": "car",
+      "violation_type": "Wrong-Way Driving",
+      "severity": "HIGH",
+      "bbox": [
+        380.6793212890625,
+        403.84112548828125,
+        456.743896484375,
+        442.2226867675781
+      ],
+      "confidence": 0.47495555877685547,
+      "snapshot_path": "output/snapshots/v_166_42_Wrong-Way_Driving.jpg"
+    },
+    {
+      "frame_no": 167,
+      "timestamp": 1781461365.09905,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (53 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        972.9686279296875,
+        585.7363891601562,
+        1219.5789794921875,
+        744.5142822265625
+      ],
+      "confidence": 0.8594101667404175,
+      "snapshot_path": "output/snapshots/v_167_34_Speeding_(53_km/h).jpg"
+    },
+    {
+      "frame_no": 168,
+      "timestamp": 1781461365.2028348,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (58 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        984.6838989257812,
+        583.4070434570312,
+        1227.83935546875,
+        738.6793823242188
+      ],
+      "confidence": 0.8827823996543884,
+      "snapshot_path": "output/snapshots/v_168_34_Speeding_(58_km/h).jpg"
+    },
+    {
+      "frame_no": 169,
+      "timestamp": 1781461365.3053138,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (63 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1019.7977294921875,
+        445.8613586425781,
+        1250.6317138671875,
+        541.2356567382812
+      ],
+      "confidence": 0.8667630553245544,
+      "snapshot_path": "output/snapshots/v_169_24_Speeding_(63_km/h).jpg"
+    },
+    {
+      "frame_no": 169,
+      "timestamp": 1781461365.3075874,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (56 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        995.7139892578125,
+        578.6752319335938,
+        1235.3182373046875,
+        734.2540893554688
+      ],
+      "confidence": 0.851222574710846,
+      "snapshot_path": "output/snapshots/v_169_34_Speeding_(56_km/h).jpg"
+    },
+    {
+      "frame_no": 170,
+      "timestamp": 1781461365.4170687,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (52 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1006.6817016601562,
+        574.9193115234375,
+        1242.3306884765625,
+        730.84423828125
+      ],
+      "confidence": 0.8396047949790955,
+      "snapshot_path": "output/snapshots/v_170_34_Speeding_(52_km/h).jpg"
+    },
+    {
+      "frame_no": 171,
+      "timestamp": 1781461365.517305,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (51 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1017.158935546875,
+        574.7241821289062,
+        1250.4364013671875,
+        728.0650634765625
+      ],
+      "confidence": 0.8674954175949097,
+      "snapshot_path": "output/snapshots/v_171_34_Speeding_(51_km/h).jpg"
+    },
+    {
+      "frame_no": 172,
+      "timestamp": 1781461365.643604,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (54 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1047.8740234375,
+        443.8376159667969,
+        1282.5574951171875,
+        544.7156982421875
+      ],
+      "confidence": 0.8455624580383301,
+      "snapshot_path": "output/snapshots/v_172_24_Speeding_(54_km/h).jpg"
+    },
+    {
+      "frame_no": 172,
+      "timestamp": 1781461365.64658,
+      "track_id": 42,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (87 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        378.965087890625,
+        403.83203125,
+        441.38653564453125,
+        440.9303894042969
+      ],
+      "confidence": 0.5462287068367004,
+      "snapshot_path": "output/snapshots/v_172_42_Speeding_(87_km/h).jpg"
+    },
+    {
+      "frame_no": 176,
+      "timestamp": 1781461366.0706048,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (70 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1086.670166015625,
+        452.27783203125,
+        1326.0804443359375,
+        548.37109375
+      ],
+      "confidence": 0.8399513959884644,
+      "snapshot_path": "output/snapshots/v_176_24_Speeding_(70_km/h).jpg"
+    },
+    {
+      "frame_no": 178,
+      "timestamp": 1781461366.2799554,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (66 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1105.2164306640625,
+        453.54443359375,
+        1351.402099609375,
+        550.9738159179688
+      ],
+      "confidence": 0.7982404232025146,
+      "snapshot_path": "output/snapshots/v_178_24_Speeding_(66_km/h).jpg"
+    },
+    {
+      "frame_no": 179,
+      "timestamp": 1781461366.3803077,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (67 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1120.1551513671875,
+        454.29669189453125,
+        1361.4041748046875,
+        551.3101196289062
+      ],
+      "confidence": 0.7915655970573425,
+      "snapshot_path": "output/snapshots/v_179_24_Speeding_(67_km/h).jpg"
+    },
+    {
+      "frame_no": 179,
+      "timestamp": 1781461366.3826773,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Red Light Running",
+      "severity": "HIGH",
+      "bbox": [
+        1080.9345703125,
+        558.1858520507812,
+        1295.888427734375,
+        704.635986328125
+      ],
+      "confidence": 0.8512240648269653,
+      "snapshot_path": "output/snapshots/v_179_34_Red_Light_Running.jpg"
+    },
+    {
+      "frame_no": 180,
+      "timestamp": 1781461366.605186,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (57 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1132.291259765625,
+        455.0935363769531,
+        1370.2420654296875,
+        552.411376953125
+      ],
+      "confidence": 0.8197676539421082,
+      "snapshot_path": "output/snapshots/v_180_24_Speeding_(57_km/h).jpg"
+    },
+    {
+      "frame_no": 180,
+      "timestamp": 1781461366.607814,
+      "track_id": 34,
+      "vehicle_class": "car",
+      "violation_type": "Red Light Running",
+      "severity": "HIGH",
+      "bbox": [
+        1087.7086181640625,
+        556.8615112304688,
+        1299.2359619140625,
+        701.6590576171875
+      ],
+      "confidence": 0.8437684178352356,
+      "snapshot_path": "output/snapshots/v_180_34_Red_Light_Running.jpg"
+    },
+    {
+      "frame_no": 180,
+      "timestamp": 1781461366.6967154,
+      "track_id": 38,
+      "vehicle_class": "car",
+      "violation_type": "Wrong-Way Driving",
+      "severity": "HIGH",
+      "bbox": [
+        528.6323852539062,
+        427.49481201171875,
+        689.5626220703125,
+        505.1748352050781
+      ],
+      "confidence": 0.8504567742347717,
+      "snapshot_path": "output/snapshots/v_180_38_Wrong-Way_Driving.jpg"
+    },
+    {
+      "frame_no": 181,
+      "timestamp": 1781461366.8955867,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (69 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1141.8477783203125,
+        455.25640869140625,
+        1386.1357421875,
+        555.4420776367188
+      ],
+      "confidence": 0.8547815084457397,
+      "snapshot_path": "output/snapshots/v_181_24_Speeding_(69_km/h).jpg"
+    },
+    {
+      "frame_no": 182,
+      "timestamp": 1781461367.006853,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (78 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1157.49658203125,
+        455.2223205566406,
+        1399.5006103515625,
+        557.2910766601562
+      ],
+      "confidence": 0.7983386516571045,
+      "snapshot_path": "output/snapshots/v_182_24_Speeding_(78_km/h).jpg"
+    },
+    {
+      "frame_no": 183,
+      "timestamp": 1781461367.1092815,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (62 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1166.50927734375,
+        455.5461730957031,
+        1413.5452880859375,
+        558.8844604492188
+      ],
+      "confidence": 0.8151042461395264,
+      "snapshot_path": "output/snapshots/v_183_24_Speeding_(62_km/h).jpg"
+    },
+    {
+      "frame_no": 184,
+      "timestamp": 1781461367.2351685,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (64 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1178.6241455078125,
+        457.197509765625,
+        1424.8385009765625,
+        560.3826293945312
+      ],
+      "confidence": 0.824265718460083,
+      "snapshot_path": "output/snapshots/v_184_24_Speeding_(64_km/h).jpg"
+    },
+    {
+      "frame_no": 184,
+      "timestamp": 1781461367.2382908,
+      "track_id": 5,
+      "vehicle_class": "truck",
+      "violation_type": "Speeding (482 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        393.2617492675781,
+        376.90631103515625,
+        567.8328857421875,
+        461.6126403808594
+      ],
+      "confidence": 0.5755938291549683,
+      "snapshot_path": "output/snapshots/v_184_5_Speeding_(482_km/h).jpg"
+    },
+    {
+      "frame_no": 185,
+      "timestamp": 1781461367.3399184,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (65 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1190.141845703125,
+        457.3359375,
+        1437.4786376953125,
+        561.3113403320312
+      ],
+      "confidence": 0.8102787137031555,
+      "snapshot_path": "output/snapshots/v_185_24_Speeding_(65_km/h).jpg"
+    },
+    {
+      "frame_no": 186,
+      "timestamp": 1781461367.4435036,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (66 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1203.7451171875,
+        457.8945617675781,
+        1448.3436279296875,
+        562.173095703125
+      ],
+      "confidence": 0.7857182025909424,
+      "snapshot_path": "output/snapshots/v_186_24_Speeding_(66_km/h).jpg"
+    },
+    {
+      "frame_no": 187,
+      "timestamp": 1781461367.5549917,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (68 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1215.191650390625,
+        458.167236328125,
+        1461.8841552734375,
+        564.06787109375
+      ],
+      "confidence": 0.798923671245575,
+      "snapshot_path": "output/snapshots/v_187_24_Speeding_(68_km/h).jpg"
+    },
+    {
+      "frame_no": 187,
+      "timestamp": 1781461367.5575023,
+      "track_id": 40,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (61 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1731.850830078125,
+        454.7778625488281,
+        1881.128662109375,
+        529.6181640625
+      ],
+      "confidence": 0.4903901517391205,
+      "snapshot_path": "output/snapshots/v_187_40_Speeding_(61_km/h).jpg"
+    },
+    {
+      "frame_no": 188,
+      "timestamp": 1781461367.6607332,
+      "track_id": 38,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (53 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        582.8997192382812,
+        429.60711669921875,
+        750.6472778320312,
+        507.9696350097656
+      ],
+      "confidence": 0.7968952655792236,
+      "snapshot_path": "output/snapshots/v_188_38_Speeding_(53_km/h).jpg"
+    },
+    {
+      "frame_no": 188,
+      "timestamp": 1781461367.6629324,
+      "track_id": 40,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (93 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1763.531005859375,
+        455.29345703125,
+        1883.6956787109375,
+        533.2146606445312
+      ],
+      "confidence": 0.5446290969848633,
+      "snapshot_path": "output/snapshots/v_188_40_Speeding_(93_km/h).jpg"
+    },
+    {
+      "frame_no": 189,
+      "timestamp": 1781461367.7664928,
+      "track_id": 40,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (85 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1736.3057861328125,
+        454.3427734375,
+        1879.3165283203125,
+        532.2420043945312
+      ],
+      "confidence": 0.5965471863746643,
+      "snapshot_path": "output/snapshots/v_189_40_Speeding_(85_km/h).jpg"
+    },
+    {
+      "frame_no": 190,
+      "timestamp": 1781461367.871195,
+      "track_id": 5,
+      "vehicle_class": "truck",
+      "violation_type": "Speeding (60 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        379.20263671875,
+        378.8890075683594,
+        547.630126953125,
+        462.6924743652344
+      ],
+      "confidence": 0.5033016800880432,
+      "snapshot_path": "output/snapshots/v_190_5_Speeding_(60_km/h).jpg"
+    },
+    {
+      "frame_no": 191,
+      "timestamp": 1781461367.973802,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (70 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1262.2659912109375,
+        460.44097900390625,
+        1516.693359375,
+        568.45849609375
+      ],
+      "confidence": 0.8515957593917847,
+      "snapshot_path": "output/snapshots/v_191_24_Speeding_(70_km/h).jpg"
+    },
+    {
+      "frame_no": 194,
+      "timestamp": 1781461368.2957544,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (75 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1299.3751220703125,
+        462.6207275390625,
+        1558.78125,
+        571.1981201171875
+      ],
+      "confidence": 0.8422248363494873,
+      "snapshot_path": "output/snapshots/v_194_24_Speeding_(75_km/h).jpg"
+    },
+    {
+      "frame_no": 196,
+      "timestamp": 1781461368.5036502,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (71 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1322.8673095703125,
+        465.0183410644531,
+        1586.029541015625,
+        573.224853515625
+      ],
+      "confidence": 0.8707365393638611,
+      "snapshot_path": "output/snapshots/v_196_24_Speeding_(71_km/h).jpg"
+    },
+    {
+      "frame_no": 197,
+      "timestamp": 1781461368.6270726,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (73 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1335.5899658203125,
+        465.6260986328125,
+        1600.2960205078125,
+        574.4833374023438
+      ],
+      "confidence": 0.8531844019889832,
+      "snapshot_path": "output/snapshots/v_197_24_Speeding_(73_km/h).jpg"
+    },
+    {
+      "frame_no": 198,
+      "timestamp": 1781461368.7338119,
+      "track_id": 38,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (55 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        652.6780395507812,
+        423.836181640625,
+        833.0188598632812,
+        510.5975646972656
+      ],
+      "confidence": 0.8282381296157837,
+      "snapshot_path": "output/snapshots/v_198_38_Speeding_(55_km/h).jpg"
+    },
+    {
+      "frame_no": 199,
+      "timestamp": 1781461368.8365526,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (83 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1363.65478515625,
+        467.4970397949219,
+        1628.5379638671875,
+        576.7125244140625
+      ],
+      "confidence": 0.8785684108734131,
+      "snapshot_path": "output/snapshots/v_199_24_Speeding_(83_km/h).jpg"
+    },
+    {
+      "frame_no": 200,
+      "timestamp": 1781461368.94313,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (72 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1375.05712890625,
+        467.51953125,
+        1643.879638671875,
+        578.2103881835938
+      ],
+      "confidence": 0.8652084469795227,
+      "snapshot_path": "output/snapshots/v_200_24_Speeding_(72_km/h).jpg"
+    },
+    {
+      "frame_no": 202,
+      "timestamp": 1781461369.158857,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (86 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1404.533935546875,
+        468.8486022949219,
+        1671.9111328125,
+        581.2600708007812
+      ],
+      "confidence": 0.8268712759017944,
+      "snapshot_path": "output/snapshots/v_202_24_Speeding_(86_km/h).jpg"
+    },
+    {
+      "frame_no": 203,
+      "timestamp": 1781461369.265926,
+      "track_id": 17,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (88 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1433.871826171875,
+        382.4437255859375,
+        1498.4715576171875,
+        429.31207275390625
+      ],
+      "confidence": 0.460360586643219,
+      "snapshot_path": "output/snapshots/v_203_17_Speeding_(88_km/h).jpg"
+    },
+    {
+      "frame_no": 205,
+      "timestamp": 1781461369.4764566,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (82 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1441.3792724609375,
+        471.3997497558594,
+        1716.330810546875,
+        585.3878173828125
+      ],
+      "confidence": 0.8565873503684998,
+      "snapshot_path": "output/snapshots/v_205_24_Speeding_(82_km/h).jpg"
+    },
+    {
+      "frame_no": 206,
+      "timestamp": 1781461369.6081626,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (77 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1456.1502685546875,
+        473.092041015625,
+        1729.893310546875,
+        586.9912719726562
+      ],
+      "confidence": 0.8708646297454834,
+      "snapshot_path": "output/snapshots/v_206_24_Speeding_(77_km/h).jpg"
+    },
+    {
+      "frame_no": 206,
+      "timestamp": 1781461369.6104279,
+      "track_id": 38,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (87 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        699.977783203125,
+        425.13433837890625,
+        898.5040893554688,
+        512.93994140625
+      ],
+      "confidence": 0.8650819659233093,
+      "snapshot_path": "output/snapshots/v_206_38_Speeding_(87_km/h).jpg"
+    },
+    {
+      "frame_no": 207,
+      "timestamp": 1781461369.7141798,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (81 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1470.2589111328125,
+        473.8883972167969,
+        1745.7208251953125,
+        587.8671875
+      ],
+      "confidence": 0.8421250581741333,
+      "snapshot_path": "output/snapshots/v_207_24_Speeding_(81_km/h).jpg"
+    },
+    {
+      "frame_no": 207,
+      "timestamp": 1781461369.7163703,
+      "track_id": 38,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (60 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        712.8134765625,
+        427.08038330078125,
+        907.6505126953125,
+        513.4573974609375
+      ],
+      "confidence": 0.842806339263916,
+      "snapshot_path": "output/snapshots/v_207_38_Speeding_(60_km/h).jpg"
+    },
+    {
+      "frame_no": 208,
+      "timestamp": 1781461369.8224773,
+      "track_id": 38,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (58 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        725.6061401367188,
+        427.7019958496094,
+        916.2348022460938,
+        513.9512939453125
+      ],
+      "confidence": 0.8256044983863831,
+      "snapshot_path": "output/snapshots/v_208_38_Speeding_(58_km/h).jpg"
+    },
+    {
+      "frame_no": 209,
+      "timestamp": 1781461369.9263237,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (88 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1498.2911376953125,
+        476.35260009765625,
+        1778.7772216796875,
+        590.0771484375
+      ],
+      "confidence": 0.8663461804389954,
+      "snapshot_path": "output/snapshots/v_209_24_Speeding_(88_km/h).jpg"
+    },
+    {
+      "frame_no": 210,
+      "timestamp": 1781461370.0370069,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (71 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1512.90771484375,
+        477.9344482421875,
+        1790.276611328125,
+        591.0559692382812
+      ],
+      "confidence": 0.8806257247924805,
+      "snapshot_path": "output/snapshots/v_210_24_Speeding_(71_km/h).jpg"
+    },
+    {
+      "frame_no": 210,
+      "timestamp": 1781461370.0394366,
+      "track_id": 38,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (53 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        744.0686645507812,
+        428.96282958984375,
+        934.180908203125,
+        514.2576904296875
+      ],
+      "confidence": 0.8288498520851135,
+      "snapshot_path": "output/snapshots/v_210_38_Speeding_(53_km/h).jpg"
+    },
+    {
+      "frame_no": 211,
+      "timestamp": 1781461370.1432843,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (84 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1527.90576171875,
+        479.3927001953125,
+        1806.3531494140625,
+        590.3936767578125
+      ],
+      "confidence": 0.867106020450592,
+      "snapshot_path": "output/snapshots/v_211_24_Speeding_(84_km/h).jpg"
+    },
+    {
+      "frame_no": 211,
+      "timestamp": 1781461370.1455164,
+      "track_id": 38,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (57 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        754.7694702148438,
+        429.3207702636719,
+        944.4588623046875,
+        514.5313110351562
+      ],
+      "confidence": 0.8674551844596863,
+      "snapshot_path": "output/snapshots/v_211_38_Speeding_(57_km/h).jpg"
+    },
+    {
+      "frame_no": 213,
+      "timestamp": 1781461370.360186,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (85 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1556.7738037109375,
+        481.3992004394531,
+        1839.716796875,
+        592.0410766601562
+      ],
+      "confidence": 0.8806748986244202,
+      "snapshot_path": "output/snapshots/v_213_24_Speeding_(85_km/h).jpg"
+    },
+    {
+      "frame_no": 213,
+      "timestamp": 1781461370.3625247,
+      "track_id": 38,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (51 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        770.4844970703125,
+        430.1822509765625,
+        963.047607421875,
+        516.21728515625
+      ],
+      "confidence": 0.8678520321846008,
+      "snapshot_path": "output/snapshots/v_213_38_Speeding_(51_km/h).jpg"
+    },
+    {
+      "frame_no": 214,
+      "timestamp": 1781461370.4635472,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (79 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1570.5386962890625,
+        482.1811218261719,
+        1855.2442626953125,
+        592.6327514648438
+      ],
+      "confidence": 0.8443782329559326,
+      "snapshot_path": "output/snapshots/v_214_24_Speeding_(79_km/h).jpg"
+    },
+    {
+      "frame_no": 214,
+      "timestamp": 1781461370.4656982,
+      "track_id": 38,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (52 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        780.5184326171875,
+        431.3254699707031,
+        972.3837280273438,
+        516.4586181640625
+      ],
+      "confidence": 0.9131185412406921,
+      "snapshot_path": "output/snapshots/v_214_38_Speeding_(52_km/h).jpg"
+    },
+    {
+      "frame_no": 215,
+      "timestamp": 1781461370.5915484,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (83 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1585.0496826171875,
+        483.3390808105469,
+        1871.405517578125,
+        593.572509765625
+      ],
+      "confidence": 0.8714420199394226,
+      "snapshot_path": "output/snapshots/v_215_24_Speeding_(83_km/h).jpg"
+    },
+    {
+      "frame_no": 216,
+      "timestamp": 1781461370.700302,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (87 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1600.8060302734375,
+        484.1605224609375,
+        1888.044677734375,
+        594.3226928710938
+      ],
+      "confidence": 0.9037178158760071,
+      "snapshot_path": "output/snapshots/v_216_24_Speeding_(87_km/h).jpg"
+    },
+    {
+      "frame_no": 217,
+      "timestamp": 1781461370.8060489,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (81 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1615.393798828125,
+        484.8905334472656,
+        1903.34326171875,
+        596.410400390625
+      ],
+      "confidence": 0.8895487189292908,
+      "snapshot_path": "output/snapshots/v_217_24_Speeding_(81_km/h).jpg"
+    },
+    {
+      "frame_no": 218,
+      "timestamp": 1781461370.9140708,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (77 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1630.159423828125,
+        487.70849609375,
+        1916.6632080078125,
+        598.4409790039062
+      ],
+      "confidence": 0.8793022632598877,
+      "snapshot_path": "output/snapshots/v_218_24_Speeding_(77_km/h).jpg"
+    },
+    {
+      "frame_no": 218,
+      "timestamp": 1781461370.916459,
+      "track_id": 38,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (50 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        814.2215576171875,
+        431.7371826171875,
+        1011.3570556640625,
+        520.3175659179688
+      ],
+      "confidence": 0.8711350560188293,
+      "snapshot_path": "output/snapshots/v_218_38_Speeding_(50_km/h).jpg"
+    },
+    {
+      "frame_no": 219,
+      "timestamp": 1781461371.020347,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (53 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1646.2763671875,
+        490.3893737792969,
+        1920.0,
+        599.1671142578125
+      ],
+      "confidence": 0.8681544065475464,
+      "snapshot_path": "output/snapshots/v_219_24_Speeding_(53_km/h).jpg"
+    },
+    {
+      "frame_no": 222,
+      "timestamp": 1781461371.3354402,
+      "track_id": 38,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (59 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        851.576416015625,
+        430.3161926269531,
+        1053.407958984375,
+        523.5289306640625
+      ],
+      "confidence": 0.874980628490448,
+      "snapshot_path": "output/snapshots/v_222_38_Speeding_(59_km/h).jpg"
+    },
+    {
+      "frame_no": 222,
+      "timestamp": 1781461371.338187,
+      "track_id": 40,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (97 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1655.210693359375,
+        439.0200500488281,
+        1765.800537109375,
+        511.3410949707031
+      ],
+      "confidence": 0.5152276158332825,
+      "snapshot_path": "output/snapshots/v_222_40_Speeding_(97_km/h).jpg"
+    },
+    {
+      "frame_no": 227,
+      "timestamp": 1781461371.8677294,
+      "track_id": 38,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (60 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        896.8701171875,
+        433.8161926269531,
+        1105.6748046875,
+        526.2186889648438
+      ],
+      "confidence": 0.8346904516220093,
+      "snapshot_path": "output/snapshots/v_227_38_Speeding_(60_km/h).jpg"
+    },
+    {
+      "frame_no": 230,
+      "timestamp": 1781461372.1832511,
+      "track_id": 38,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (56 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        927.83349609375,
+        432.7969970703125,
+        1136.0543212890625,
+        531.1785278320312
+      ],
+      "confidence": 0.8329945206642151,
+      "snapshot_path": "output/snapshots/v_230_38_Speeding_(56_km/h).jpg"
+    },
+    {
+      "frame_no": 233,
+      "timestamp": 1781461372.5003054,
+      "track_id": 38,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (55 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        954.2086791992188,
+        434.187255859375,
+        1168.0296630859375,
+        533.7490234375
+      ],
+      "confidence": 0.84149569272995,
+      "snapshot_path": "output/snapshots/v_233_38_Speeding_(55_km/h).jpg"
+    },
+    {
+      "frame_no": 234,
+      "timestamp": 1781461372.631904,
+      "track_id": 24,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (55 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1883.377197265625,
+        497.2895202636719,
+        1919.5306396484375,
+        597.6351928710938
+      ],
+      "confidence": 0.45542699098587036,
+      "snapshot_path": "output/snapshots/v_234_24_Speeding_(55_km/h).jpg"
+    },
+    {
+      "frame_no": 236,
+      "timestamp": 1781461372.8425565,
+      "track_id": 38,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (54 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        975.1744384765625,
+        436.2552185058594,
+        1198.5185546875,
+        537.5245361328125
+      ],
+      "confidence": 0.8493391871452332,
+      "snapshot_path": "output/snapshots/v_236_38_Speeding_(54_km/h).jpg"
+    },
+    {
+      "frame_no": 255,
+      "timestamp": 1781461374.8481834,
+      "track_id": 48,
+      "vehicle_class": "car",
+      "violation_type": "Wrong-Way Driving",
+      "severity": "HIGH",
+      "bbox": [
+        381.4692687988281,
+        401.9873046875,
+        444.91119384765625,
+        441.09765625
+      ],
+      "confidence": 0.47477099299430847,
+      "snapshot_path": "output/snapshots/v_255_48_Wrong-Way_Driving.jpg"
+    },
+    {
+      "frame_no": 271,
+      "timestamp": 1781461376.6396606,
+      "track_id": 47,
+      "vehicle_class": "car",
+      "violation_type": "Wrong-Way Driving",
+      "severity": "HIGH",
+      "bbox": [
+        445.50994873046875,
+        411.3591003417969,
+        523.3798217773438,
+        460.9228515625
+      ],
+      "confidence": 0.4520324170589447,
+      "snapshot_path": "output/snapshots/v_271_47_Wrong-Way_Driving.jpg"
+    },
+    {
+      "frame_no": 272,
+      "timestamp": 1781461376.8416448,
+      "track_id": 17,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (123 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1404.972900390625,
+        376.7267150878906,
+        1517.6707763671875,
+        429.3572998046875
+      ],
+      "confidence": 0.4558604061603546,
+      "snapshot_path": "output/snapshots/v_272_17_Speeding_(123_km/h).jpg"
+    },
+    {
+      "frame_no": 276,
+      "timestamp": 1781461377.2634163,
+      "track_id": 47,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (126 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        406.3399963378906,
+        408.2696228027344,
+        506.1142883300781,
+        460.8765869140625
+      ],
+      "confidence": 0.6687543392181396,
+      "snapshot_path": "output/snapshots/v_276_47_Speeding_(126_km/h).jpg"
+    },
+    {
+      "frame_no": 278,
+      "timestamp": 1781461377.4800622,
+      "track_id": 47,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (100 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        390.6360778808594,
+        405.2831115722656,
+        493.7320251464844,
+        459.22283935546875
+      ],
+      "confidence": 0.51938396692276,
+      "snapshot_path": "output/snapshots/v_278_47_Speeding_(100_km/h).jpg"
+    },
+    {
+      "frame_no": 280,
+      "timestamp": 1781461377.69307,
+      "track_id": 17,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (84 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1434.153564453125,
+        379.0182189941406,
+        1519.604248046875,
+        429.55462646484375
+      ],
+      "confidence": 0.4575146436691284,
+      "snapshot_path": "output/snapshots/v_280_17_Speeding_(84_km/h).jpg"
+    },
+    {
+      "frame_no": 299,
+      "timestamp": 1781461379.6992228,
+      "track_id": 51,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (77 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1707.7821044921875,
+        439.7809753417969,
+        1827.6141357421875,
+        525.1278686523438
+      ],
+      "confidence": 0.5900940299034119,
+      "snapshot_path": "output/snapshots/v_299_51_Speeding_(77_km/h).jpg"
+    },
+    {
+      "frame_no": 301,
+      "timestamp": 1781461379.9248307,
+      "track_id": 51,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (73 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1672.654052734375,
+        438.8586120605469,
+        1817.5301513671875,
+        522.1361083984375
+      ],
+      "confidence": 0.45967838168144226,
+      "snapshot_path": "output/snapshots/v_301_51_Speeding_(73_km/h).jpg"
+    },
+    {
+      "frame_no": 302,
+      "timestamp": 1781461380.0426633,
+      "track_id": 51,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (65 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1701.715087890625,
+        439.7052917480469,
+        1812.711669921875,
+        521.4683837890625
+      ],
+      "confidence": 0.47513946890830994,
+      "snapshot_path": "output/snapshots/v_302_51_Speeding_(65_km/h).jpg"
+    },
+    {
+      "frame_no": 304,
+      "timestamp": 1781461380.257788,
+      "track_id": 51,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (102 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1671.570068359375,
+        435.368408203125,
+        1808.6431884765625,
+        519.8697509765625
+      ],
+      "confidence": 0.5444501638412476,
+      "snapshot_path": "output/snapshots/v_304_51_Speeding_(102_km/h).jpg"
+    },
+    {
+      "frame_no": 306,
+      "timestamp": 1781461380.4659286,
+      "track_id": 51,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (87 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        1661.9366455078125,
+        433.30474853515625,
+        1800.378662109375,
+        520.1195068359375
+      ],
+      "confidence": 0.49157941341400146,
+      "snapshot_path": "output/snapshots/v_306_51_Speeding_(87_km/h).jpg"
+    },
+    {
+      "frame_no": 312,
+      "timestamp": 1781461381.0994127,
+      "track_id": 51,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (52 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1670.8587646484375,
+        428.9916076660156,
+        1781.23486328125,
+        517.9197998046875
+      ],
+      "confidence": 0.7010741233825684,
+      "snapshot_path": "output/snapshots/v_312_51_Speeding_(52_km/h).jpg"
+    },
+    {
+      "frame_no": 312,
+      "timestamp": 1781461381.1014922,
+      "track_id": 57,
+      "vehicle_class": "car",
+      "violation_type": "Wrong-Way Driving",
+      "severity": "HIGH",
+      "bbox": [
+        231.8972930908203,
+        409.7710266113281,
+        341.6719665527344,
+        469.1720275878906
+      ],
+      "confidence": 0.48304930329322815,
+      "snapshot_path": "output/snapshots/v_312_57_Wrong-Way_Driving.jpg"
+    },
+    {
+      "frame_no": 317,
+      "timestamp": 1781461381.7405431,
+      "track_id": 51,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (68 km/h)",
+      "severity": "MEDIUM",
+      "bbox": [
+        1658.2657470703125,
+        425.3793029785156,
+        1765.66650390625,
+        515.0215454101562
+      ],
+      "confidence": 0.6197661757469177,
+      "snapshot_path": "output/snapshots/v_317_51_Speeding_(68_km/h).jpg"
+    },
+    {
+      "frame_no": 324,
+      "timestamp": 1781461382.4785316,
+      "track_id": 57,
+      "vehicle_class": "car",
+      "violation_type": "Speeding (107 km/h)",
+      "severity": "HIGH",
+      "bbox": [
+        270.1283874511719,
+        407.3810729980469,
+        351.3153076171875,
+        465.21002197265625
+      ],
+      "confidence": 0.47636452317237854,
+      "snapshot_path": "output/snapshots/v_324_57_Speeding_(107_km/h).jpg"
+    },
+    {
+      "frame_no": 350,
+      "timestamp": 1781461385.2583895,
+      "track_id": 63,
+      "vehicle_class": "car",
+      "violation_type": "Wrong-Way Driving",
+      "severity": "HIGH",
+      "bbox": [
+        377.4090576171875,
+        407.69915771484375,
+        511.8331604003906,
+        491.7161865234375
+      ],
+      "confidence": 0.6580797433853149,
+      "snapshot_path": "output/snapshots/v_350_63_Wrong-Way_Driving.jpg"
+    },
+    {
+      "frame_no": 360,
+      "timestamp": 1781461386.3974912,
+      "track_id": 63,
+      "vehicle_class": "car",
+      "violation_type": "Wrong-Way Driving",
+      "severity": "HIGH",
+      "bbox": [
+        408.3162536621094,
+        416.37091064453125,
+        552.9749145507812,
+        496.5873718261719
+      ],
+      "confidence": 0.7500424385070801,
+      "snapshot_path": "output/snapshots/v_360_63_Wrong-Way_Driving.jpg"
+    }
+  ]
+}
